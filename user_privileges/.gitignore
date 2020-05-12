@@ -1,0 +1,6 @@
+*
+!.gitignore
+!index.html
+!audit_trail.php
+!default_module_view.php
+!enable_backup.php

@@ -1,0 +1,29 @@
+#
+# Vtiger runtime files
+#
+/config.inc.php
+/config.performance.php
+/cron/output.txt
+/logs/*
+!/logs/.htaccess
+/.htaccess
+
+#
+# developement files
+#
+/crontest.php
+/cron/MailScanner.service.php
+/include/custom.php
+/layouts/v7_1
+/modules/Expenses.off
+/modules/QtMailParser
+/modules/QtScanner
+/log4php.properties
+/vtigercron-debug.php
+/vtigercron-test.php
+/build.xml
+/composer.json
+/composer.lock
+/index.php
+/.php_cs.cache
+
