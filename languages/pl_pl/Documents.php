@@ -18,7 +18,7 @@ $languageStrings = array(
 	'LBL_NOTE_INFORMATION' => 'Podstawowe informacje',
 	'LBL_FILE_INFORMATION' => 'Informacje o pliku',
 	'LBL_DESCRIPTION' => 'Opis',
-	
+
 	//Field Labels
 	'Title' => 'Nazwa dokumentu',
 	'File Name' => 'Nazwa pliku',
@@ -32,7 +32,7 @@ $languageStrings = array(
 	'Folder Name' => 'Nazwa folderu',
 	'Document No' => 'Numer dokumentu',
 	'Last Modified By' => 'Ostatnio modyfikowane przez',
-	
+
 	//Folder
 	'LBL_FOLDER_HAS_DOCUMENTS' => 'Przesuń dokument do innego folderu, przed usunięciem obecnie przydzielonego folderu',
 
@@ -53,7 +53,7 @@ $languageStrings = array(
 	'LBL_DOCUMENTS_MOVED_SUCCESSFULLY' => 'Dokument przeniesiony poprawnie',
 	'LBL_DENIED_DOCUMENTS' => 'Brak dostępu do dokumentu',
 	'MB' => 'MB',
-	
+
 	'LBL_ADD_NEW_FOLDER' => 'Dodaj nowy folder',
 	'LBL_FOLDER_NAME' => 'Nazwa folderu',
 	'LBL_FOLDER_DESCRIPTION' => 'Opis folderu',
@@ -68,29 +68,29 @@ $languageStrings = array(
     'LBL_INTERNAL_DOCUMENT_TYPE' =>'Dokument wewnętrzny',
     'LBL_EXTERNAL_DOCUMENT_TYPE' =>'Adres zewnętrzny',
     'LBL_WEBDOCUMENT_TYPE' =>'Dokument sieci web',
-    'LBL_DRAG_&_DROP_FILE_HERE' => 'Drag & Drop plików Tutaj',
+    'LBL_DRAG_&_DROP_FILE_HERE' => 'Drag & Drop tutaj',
     'LBL_WEB' => 'Sieć',
-    'LBL_UPLOAD_DOCUMENT_TO_VTIGER' => 'Wyślij Dokumenty Aby Vtiger',
-    'LBL_ROOT' => 'Korzeń',
+    'LBL_UPLOAD_DOCUMENT_TO_VTIGER' => 'Wyślij dokument do Vtiger',
+    'LBL_ROOT' => 'Głowny',
     'LBL_AUTHORIZE' => 'Autoryzować',
     'LBL_DOCUMENT_SOURCE' => 'Dokument źródłowy',
-    'LBL_FILE_URL' => 'URL pliku',
+    'LBL_FILE_URL' => 'URLa do pliku',
 
   'Documents' => 'Dokumenty',
   'LBL_EMAIL_FILE_AS_ATTACHMENT' => 'Plik jako załącznik do wiadomości e-mail',
   'LBL_UPLOAD_TO' => 'Pobierz',
   'LBL_NEW_DOCUMENT' => 'Nowy Dokument',
-  'LBL_VTIGER' => 'Free rosyjska',
-  'LBL_CREATE_YOUR_OWN' => 'Stwórz swój własny',
+  'LBL_VTIGER' => 'vTiger',
+  'LBL_CREATE_YOUR_OWN' => 'Stwórz własny',
   'LBL_SHARE_DOCUMENT' => 'Udostępnianie dokumentu',
-  'LBL_UPLOAD_TO_VTIGER' => 'Pobierz dokument free rosyjska',
+  'LBL_UPLOAD_TO_VTIGER' => 'Wgraj do CRM',
   'LBL_UPLOAD' => 'Pobierz',
-  'LBL_SELECT_FILE_FROM_COMPUTER' => 'Wybierz plik z mojego komputera',
-  'LBL_FILE_UPLOAD' => 'Pobieranie Pliku',
-  'LBL_LINK_EXTERNAL_DOCUMENT' => 'Link Do Dokumentu Zewnętrznego',
+  'LBL_SELECT_FILE_FROM_COMPUTER' => 'Wybierz plik z komputera',
+  'LBL_FILE_UPLOAD' => 'Upload pliku',
+  'LBL_LINK_EXTERNAL_DOCUMENT' => 'Link do dokumentu zewnętrznego',
   'LBL_TO_SERVICE' => 'Do %s',
   'LBL_FROM_SERVICE' => 'Z %s',
-  'LBL_CREATE_NEW' => 'Tworzenie nowej %s',
+  'LBL_CREATE_NEW' => 'Tworzenie nowego %su',
 	'LBL_SELECT_A_FOLDER_TO_MOVE' => 'Proszę wybrać folder, aby przenieść',
 );
 $jsLanguageStrings = array(
