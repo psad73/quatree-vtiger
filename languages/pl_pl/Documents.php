@@ -94,6 +94,8 @@ $languageStrings = array(
 	'LBL_SELECT_A_FOLDER_TO_MOVE' => 'Proszę wybrać folder, aby przenieść',
 );
 $jsLanguageStrings = array(
+    'LBL_NEW_DOCUMENT' => 'Nowy Dokument',
+    
 	'JS_NEW_FOLDER' => 'Nowy folder',
 	'JS_MOVE_DOCUMENTS' => 'Przenieś dokument',
 	//Move documents confirmation message
