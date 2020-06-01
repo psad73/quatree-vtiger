@@ -26,5 +26,6 @@
 /composer.lock
 /index.php
 /.php_cs.cache
+/dev
 
 /nbproject
