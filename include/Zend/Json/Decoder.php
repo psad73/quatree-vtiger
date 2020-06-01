@@ -149,7 +149,9 @@ class Zend_Json_Decoder
     public static function decode($source = null, $objectDecodeType = Zend_Json::TYPE_ARRAY)
     {
         if (null === $source) {
-            throw new Zend_Json_Exception('Must specify JSON encoded source for decoding');
+           $e = new Exception;
+            //throw new Zend_Json_Exception('Must specify JSON encoded source for decoding');
+           return null;
         } elseif (!is_string($source)) {
             throw new Zend_Json_Exception('Can only decode JSON encoded strings');
         }
@@ -189,7 +191,7 @@ class Zend_Json_Decoder
      * Decodes an object of the form:
      *  { "attribute: value, "attribute2" : value,...}
      *
-     * If Zend_Json_Encoder was used to encode the original object then 
+     * If Zend_Json_Encoder was used to encode the original object then
      * a special attribute called __className which specifies a class
      * name that should wrap the data contained within the encoded source.
      *
