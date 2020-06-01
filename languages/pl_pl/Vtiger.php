@@ -697,19 +697,19 @@ $languageStrings = array(
     'Mobile Call' => 'Mobile Call',
 	'Related To' => 'Związanych z',
     'Organization Name' => 'Nazwa organizacji',
-    
+
     // Convert Lead and Potential
     'LBL_CONVERT_ERROR_TITLE' => 'Moduły wyłączone',
 	'CANNOT_CONVERT' => 'Nie można przekonwertować',
 	'LBL_FOLLOWING_ARE_POSSIBLE_REASONS' => 'Poniżej może znajdować się jeden z możliwych powodów:',
     'LBL_MANDATORY_FIELDS_ARE_EMPTY' => 'Niektóre wartość z obowiązkowych pól są puste',
-    
+
     // SMSNotifier Phone Format Warning
     'LBL_PHONE_FORMAT_WARNING' => 'prosimy upewnić się, że numer telefonu jest w międzynarodowym formacie E.164',
-    'LBL_PHONEFORMAT_WARNING_CONTENT' => 'Numer E.164 formatowanie może mieć maksymalnie piętnastu cyfr i są zwykle zapisywane w następujący sposób: [+] [Kod kraju] [numer abonenta wraz z numerem kierunkowym] 
+    'LBL_PHONEFORMAT_WARNING_CONTENT' => 'Numer E.164 formatowanie może mieć maksymalnie piętnastu cyfr i są zwykle zapisywane w następujący sposób: [+] [Kod kraju] [numer abonenta wraz z numerem kierunkowym]
                                            Na przykład, aby przekonwertować numer telefonu w USA (415 599 2671) do formatu E.164, należałoby dodać prefiks \'+\' i kod kraju (co jest 1) przed numerem (+1 415 599 2671 ). W Wielkiej Brytanii i wielu innych krajach na arenie międzynarodowej, lokalne wybieranie wymaga dodanie 0 przed numerem abonenta. Jednak stosowanie formatu E.164 ten 0 muszą być usunięte.Liczba takich jak 020 7183 8750 w Wielkiej Brytanii będą formatowane jako 44 20 7183 8750.ss',
     'LBL_WARNING' => 'ostrzeżenie',
-    
+
     // Date Conditions
     'LBL_LESS_THAN_DAYS_AGO' => 'Mniej niż dzień temu',
     'LBL_MORE_THAN_DAYS_AGO' => 'Więcej niż dni temu',
@@ -731,12 +731,12 @@ $languageStrings = array(
     'LBL_NOTE_EXISTING_ATTACHMENTS_WILL_BE_REPLACED' => 'Uwaga: Istniejące narzędzia (obrazów / plików) zostanie zastąpiony',
 	'LBL_INCLUDE_SIGNATURE_INFO' => 'Podpis się w moje preferencje zostaną dołączone do dołu email',
 	'LBL_INCLUDE_SIGNATURE' => 'Dołącz podpis',
-    
+
 
       //common standard fields
     'Created By' => 'Utworzony przez',
     'LBL_CLICK_HERE'=>'Kliknij tutaj',
-    
+
     // Social Module Strings
     'LBL_TWEETS' => 'Tweety',
     'LBL_FAVOURITES' => 'Ulubione',
@@ -768,7 +768,7 @@ $languageStrings = array(
     'LBL_CLICK_TO_SELECT_PROFILE' => 'Kliknij, aby wybrać profil',
     // Module field to store Source of Record
     'Source' => 'Źródło',
-    
+
     'LBL_SELCT_EMAIL_RECIPIENTS'   => 'Wybierz adresatów poczty e-mail',
 	'LBL_REMEMBER_MY_PREF'         => 'Zapamiętaj moje preferencje',
 	'LBL_RECIPIENT_PREFS'          => 'Preferencje Otrzymujące'    ,
@@ -782,12 +782,12 @@ $languageStrings = array(
     'hepldesk_support_email' => 'Helpdesk Wsparcie Email-Id',
     'user_primary_email' => 'Użytkownik Główny email',
     'LBL_DEFAULT_REPLY_TO_INFO' => "To ustawienie ma zastosowanie tylko do bezpośrednich wiadomości z CRM. To nie ma wpływu na e-maile wysyłane z przepływów pracy, kampanie e-mail, itp",
- 
-     
+
+
     'LBL_INVALID_IMAGE'            => 'Nieprawidłowy zdjęcie'     ,
  	'LBL_NEXT'                     => 'Następny'                   ,
 	'LBL_FINISH'                   => 'Wykończenie'                ,
-	
+
 	'VAT' => 'VAT',
 	'Sales' => 'Obroty',
 	'Service' => 'Serwis',
@@ -797,7 +797,7 @@ $languageStrings = array(
 	'S&H Amount' => 'opłaty',
 	'S&H Percent' => 'Podatki w sprawie opłat',
 	'Tax Region' => 'Region podatkowa',
-    
+
     'SINGLE_Potentials' => 'Okazja',
 	'SINGLE_HelpDesk' => 'Bilet',
 	'SINGLE_Accounts' => 'Organizacja',
@@ -1055,7 +1055,7 @@ i w cudzysłowie.',
   'COMPANY_LOGO_HELP_TEXT_2' => 'Możesz edytować informacje na temat firmy, później od <br>
 \'CRM w" Ustawienia " > "szablony" > "dane firmy\' s.',
   'LBL_CHOOSE_PREFERENCES' => 'Wybierz Swoje preferencje',
-  'PREFERENCES_HELP_TEXT' => 'Waluta bazowa - wybrać walutę. Jeśli używasz kilku<br> W 
+  'PREFERENCES_HELP_TEXT' => 'Waluta bazowa - wybrać walutę. Jeśli używasz kilku<br> W
 walut, wszystkie wartości są przeliczane na walutę bazową i przechowywać,<br>ale
 wykorzystując współczynnik przeliczania skonfigurowanego w programie CRM.',
   'PREFERENCES_HELP_TEXT_2' => 'Osobiste preferencje mogą być dostosowane przez każdego Użytkownika w zespole.<br>
@@ -1193,7 +1193,7 @@ na zewnątrz free rosyjska.',
   'LBL_GENERAL_FIELDS' => 'Wspólne Pola',
   'LBL_ROLL_UP' => 'Roll up',
   'LBL_TOUCH_POINTS' => 'Touchpoints',
-  'LBL_EMAIL_SUPPORT'            => 'Wsparcie E-Mail'             , 
+  'LBL_EMAIL_SUPPORT'            => 'Wsparcie E-Mail'             ,
   'LBL_NO_ENTITIES_FOUND'        => 'Nie %S nie znaleziono'       ,
 
   'LBL_DAY' => 'dzień',
@@ -1370,7 +1370,7 @@ $jsLanguageStrings = array(
 
     // SMSNotifier Phone Format Warning
     'JS_PHONEFORMAT_ERROR' => 'Proszę sprawdzić numer telefonu jest w Internatonal formacie E.164 z \'+\' i prefiksu kodu kraju Ex +1 415 599 2671',
-    
+
     // Leads and Potentials Field Mapping
     'JS_NONE'                      => 'żaden'                           , // TODO: Review
 	'JS_IS_ALREADY_BEEN_MAPPED'    => 'jest już odwzorowywany'          , // TODO: Review
@@ -1436,7 +1436,7 @@ $jsLanguageStrings = array(
     'JS_FAILED_TO_SEND_FOR_SIGNATURE' => 'Nie udało się wysłać do podpisania',
 	// Cron
     'JS_NONE_OF_THE_VALUES_ARE_CHANGED' => 'Żaden z tych wartości zmienia się',
-    
+
 	'JS_SUITABLE_VTIGER_FIELD_NOT_AVAILABLE_FOR_MAPPING' => 'Odpowiednie pola Vtiger niedostępne dla mapowania',
     'JS_SAVED_SUCCESSFULLY' => 'Ustawienia zostały zapisane',
     'phone' => 'Telefon',
@@ -1455,7 +1455,7 @@ $jsLanguageStrings = array(
     'home-page' => 'Strona główna',
     'address' => 'Adres',
     'JS_REMOVE_SYNC_CONFIRMATION' => 'Usuń synchronizacji usunie tylko istniejące uwierzytelniania, nie usunie zsynchronizowane rekordy. W przypadku synchronizacji z samym kontem Google znowu będą tworzone zduplikowane rekordy. Czy na pewno chcesz usunąć synchronizacji?',
-    
+
     // Social Module Strings
     'JS_PLEASE_WAIT' => 'Proszę czekać ...',
     'JS_SOCIAL_FIELD_ERROR' => 'pole jest wymagane',
@@ -1473,7 +1473,7 @@ $jsLanguageStrings = array(
     'JS_LEAD_ADDED_SUCCESS_MSG' => 'Ołów dodany pomyślnie',
     'JS_OPPORTUNITY_ADDED_SUCESS_MSG' => 'Szansa dodany pomyślnie',
     'JS_TICKET_ADDED_SUCESS_MSG' => 'Bilet dodany pomyślnie',
-    
+
     'JS_REMOVE_SYNC_CONFIRMATION' => 'Usuń synchronizacji usunie tylko istniejące uwierzytelniania, nie usunie zsynchronizowane rekordy. W przypadku synchronizacji z samym kontem Google znowu będą tworzone zduplikowane rekordy. Czy na pewno chcesz usunąć synchronizacji?',
     'JS_PASSWORD_MISMATCH_ERROR' => 'Wpisz ponownie hasło. "Nowe hasło" oraz "hasło potwierdzenia" wartości nie są zgodne.',
 	'JS_COMMA_NOT_ALLOWED_USERS' => 'Przecinek (,) nie jest dozwolone w Imię i Nazwisko',
@@ -1485,7 +1485,7 @@ $jsLanguageStrings = array(
     'OFFICE365_SYNC_REMOVED_SUCCESSFULLY' => 'Office365 synchronizacji usunięte pomyślnie',
     'OFFICE365_REMOVE_SYNCHRONIZATION_MESSAGE' => 'Kliknięcie na ten usunie istniejące uwierzytelniania Office365. To nie usunie żadnych zapisów, które są już zsynchronizowane. Nie będzie wyrejestrować aplikację vTiger od Ciebie office365 uwagę, aby wyrejestrować odwiedzić https://myapps.microsoft.com/',
 	'JS_SELECT_OPTION' => 'Select an Option',
-    
+
     'JS_LOADING_COMMENTS' => 'Pobieranie Komentarze ...',
     'Payment Failure!' => 'Brak płatności!',
     'We could not process the payment for your last invoice. Please update payment info to continue using the service without disruption.' => 'Nie możemy przetworzyć płatności za ostatnią fakturę. Prosimy zaktualizować informacje o płatności, aby kontynuować korzystanie z usługi bez zakłóceń.',
@@ -1652,4 +1652,6 @@ $jsLanguageStrings = array(
 	'JS_PASSWORD_MISMATCH_ERROR' => 'Należy ponownie wprowadzić hasło. „Nowe hasło” i „Potwierdź hasło” Wartości nie pasują.',
 	'JS_LIST_DELETE_CONFIRMATION' => 'Czy na pewno chcesz usunąć?',
 	'JS_WIDGET_RESIZING_WAIT_MSG' => 'Widget zawartość zostanie załadowany po zmianie rozmiaru.',
+    'JS_RECORD_CREATED' => 'Rekord utworzony',
+    'JS_RECORD_UPDATED' => 'Rekord zauktualizowany',
 );
