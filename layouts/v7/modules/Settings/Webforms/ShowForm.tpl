@@ -29,7 +29,7 @@
 				<pre>
 					<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 					<form id="__vtigerWebForm" name="{$RECORD_MODEL->getName()}" action="{$ACTION_PATH}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
-						<input type="hidden" name="publicid" value="{$RECORD_MODEL->get('publicid')}" />
+                                            <input type="hidden" name="publicid" value="{$RECORD_MODEL->get('publicid')}" />
 						<input type="hidden" name="urlencodeenable" value="1" />
 						<input type="hidden" name="name" value="{$RECORD_MODEL->getName()}" />
 						{assign var=IS_CAPTCHA_ENABLED value=$RECORD_MODEL->isCaptchaEnabled()}
@@ -59,7 +59,7 @@
 											{assign var=TYPE value="text"}
 										{else if ($DATA_TYPE eq "text")}
 											{assign var=TYPE value="text"}
-											<textarea name="{urlencode($FIELD_MODEL->getFieldName())}" {if $FIELD_MODEL->get('required') eq 1} required{/if} 
+											<textarea name="{urlencode($FIELD_MODEL->getFieldName())}" {if $FIELD_MODEL->get('required') eq 1} required{/if}
 													{if $FIELD_MODEL->get('hidden') eq 1} hidden{/if} >{$FIELD_MODEL->get('fieldvalue')}</textarea>
 										{else if ($DATA_TYPE eq "email")}
 											{assign var=TYPE value="email"}
@@ -121,8 +121,9 @@
 						<div id="captchaField"></div>
 						<input type="hidden" id="captchaUrl" value="{$CAPTCHA_PATH}">
 						<input type="hidden" id="recaptcha_validation_value" >
+                                                <div class="g-recaptcha" data-sitekey="{$VTIGER_RECAPTCHA_PUBLIC_KEY}" data-callback="JSONPCallback"></div>
 					{/if}
-					<input type="submit" value="Submit" ></input>
+					<input type="submit" value="Submit" style="display: none;"></input>
 				</form>
 				</pre>
 			</code>
