@@ -45,9 +45,6 @@ $languageStrings = array(
 	'Feature' => 'Przyszłościowa',
 	'Critical' => 'Krytyczna',
 
-	'Open' => 'Otwarte',
-	'Wait For Response' => 'Oczekuje na odpowiedź',
-	'Closed' => 'Zamknięte',
 	'LBL_STATUS' => 'Status',
 	'LBL_SEVERITY' => 'Waga zgłoszenia',
 	//DetailView Actions
@@ -103,4 +100,13 @@ $languageStrings = array(
   'LBL_ADD_DOCUMENT' => 'Dodaj Dokument',
   'LBL_OPEN_TICKETS' => 'Zgłoszenia z otwartą',
     'LBL_CREATE_TICKET' => 'Utwórz zgłoszenie',
+
+
+   // Ticket status
+    'Open' => 'Otwarty',
+    'Awaiting Approval' => 'Oczekujący na akceptację',
+    'Stuck' => 'Wstrzymany',
+    'Planned' => 'Planowany',
+	'Wait For Response' => 'Oczekuje na odpowiedź',
+	'Closed' => 'Zamknięty',
 );
