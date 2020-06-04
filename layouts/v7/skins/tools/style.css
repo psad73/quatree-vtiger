@@ -4707,6 +4707,7 @@ form[name="notification_settings"] .select2-choice {
   display: inline-block;
   padding: 2px 1px !important;
   line-height: 15px;
+  width: 100%;
 }
 /******************************************* 
 ************* Dashboard Styles *************
