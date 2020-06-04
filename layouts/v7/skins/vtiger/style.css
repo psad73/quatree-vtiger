@@ -1283,10 +1283,10 @@ ul.unstyled {
   padding-left: 0px;
 }
 .coloredBorderBottom {
-  border-bottom: 1px solid #3CB878;
+  border-bottom: 1px solid #35aa47;
 }
 .coloredBorderTop {
-  border-top: 1px solid #3CB878;
+  border-top: 1px solid #35aa47;
 }
 .redColor {
   color: red;
@@ -3525,7 +3525,7 @@ th {
   padding-left: 40px;
 }
 .portal-dashboard {
-  border: 1px solid #3CB878 !important;
+  border: 1px solid #35aa47 !important;
   border-left: 0px !important;
   min-height: 500px;
   padding-left: 15px;
@@ -3605,7 +3605,7 @@ th {
   margin: 15px;
 }
 .portal-fields-content {
-  border-right: 1px solid #3CB878 !important;
+  border-right: 1px solid #35aa47 !important;
   min-height: 500px;
 }
 .portal-slider-legend {
@@ -3621,11 +3621,11 @@ th {
   margin-left: 45px!important;
 }
 .portalModuleRow {
-  border-left: 4px solid #3CB878 !important;
+  border-left: 4px solid #35aa47 !important;
 }
 .portalMenuHeader {
-  border-bottom: 1px solid #3CB878 !important;
-  border-right: 1px solid #3CB878 !important;
+  border-bottom: 1px solid #35aa47 !important;
+  border-right: 1px solid #35aa47 !important;
   font-size: 22px;
 }
 .portalModuleRow .active {
@@ -7528,9 +7528,5 @@ input:focus:-ms-input-placeholder {
 }
 body .fc {
   overflow: auto;
-}
-.modules-menu ul li.active a {
-  border-left: 3px solid #3CB878;
-  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
