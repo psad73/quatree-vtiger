@@ -827,6 +827,8 @@ a.menu-item:hover {
 }
 .fieldValue .value {
   max-width: 85%;
+  min-width: 75%;
+  border-bottom: dotted 1px #ddd;
   display: inline-block;
   word-break: break-word;
 }
@@ -1758,7 +1760,7 @@ th {
   width: 30%;
 }
 #detailView td.fieldValue .action {
-  display: none;
+  /*display : none;*/
   position: absolute;
   margin-left: 10px;
 }
@@ -1774,7 +1776,7 @@ th {
 }
 .overlayDetailHeader .recordBasicInfo .fieldLabel .action,
 .detailview-header .recordBasicInfo .fieldLabel .action {
-  display: none;
+  /*display : none;*/
   position: absolute;
   margin-left: 10px;
 }
@@ -2331,7 +2333,9 @@ th {
 }
 .summaryView .fieldValue .value {
   max-width: 80%;
+  min-width: 70%;
   width: auto !important;
+  border-bottom: dotted 1px #ddd;
 }
 .caseReplyArea .nav > li {
   padding: 0 10px;
@@ -4707,7 +4711,7 @@ form[name="notification_settings"] .select2-choice {
   display: inline-block;
   padding: 2px 1px !important;
   line-height: 15px;
-  width: 100%;
+  width: 95%;
 }
 /******************************************* 
 ************* Dashboard Styles *************
