@@ -16,8 +16,12 @@ $languageStrings = array(
 	'LBL_PRIVACY_POLICY' => 'Polityka prywatności (EN)',
 
 	// Common Actions
+    'LBL_NEW' => 'Nowy',
+    'LBL_LINKED' => 'Połączony',
 	'LBL_SELECT_ALL' => 'Zaznacz wszystkie rekordy',
+
 	'LBL_CREATING_NEW' => 'Tworzenie nowych',
+
 	'LBL_EDITING' => 'Edytowanie',
 	'LBL_SAVE' => 'Zapisz',
 	'LBL_CANCEL' => 'Anuluj',
@@ -26,10 +30,19 @@ $languageStrings = array(
 	'LBL_EXPORT' => 'Export',
 	'LBL_FIND_DUPLICATES' => 'Szukaj duplikatów',
 	'LBL_MORE' => 'Więcej',
+
 	'LBL_ACTIONS' => 'Dostępne narzędzia',
     'LBL_ADD' => 'Dodaj',
 	'LBL_EDIT' => 'Edytuj',
 	'LBL_DELETE' => 'Usuń',
+
+
+
+
+
+
+
+
 	'LBL_SETTINGS'=> 'Ustawienia',
 	'LBL_ADD_COMMENT' => 'Dodaj komentarz',
 	'LBL_EDIT_FIELDS' => '%s Pola & Layout',
@@ -45,10 +58,13 @@ $languageStrings = array(
 	'LBL_CLEAR' => 'Wyczyść',
 	'LBL_YES' => 'Tak',
 	'LBL_NO' => 'Nie',
+
+
     'LBL_MASS_EDITING' => 'Edycja masowa',
 	'LBL_DESELECT_ALL_RECORDS' => 'Odznacz wszystko',
 	'LBL_QUICK_CREATE' => 'Szybkie tworzenie',
-	'LBL_SEND_EMAIL' => 'Wyślij maila',
+
+    'LBL_SEND_EMAIL' => 'Wyślij maila',
 	//SEND EMAIL translations
 	'LBL_ALL_EMAILS' => 'Wszystkie pola mailowe',
 	'LBL_MUTIPLE_EMAIL_SELECT_ONE' => 'Ten rekord posiada wiele adresów mailowych, wybierz właściwy.',
@@ -67,15 +83,25 @@ $languageStrings = array(
 	'LBL_SUPPORT' => 'Pomoc',
 	'LBL_INVENTORY' => 'Magazyn',
 	'LBL_ANALYTICS' => 'Raporty',
+    'LBL_CONTACT' => 'ZARZĄDZANIE KONTAKTAMI',
 	'LBL_HOME' => 'Pulpit',
-
+    'LBL_NO_ATTACHMENTS' => 'Brak załączników',
+    'LBL_COMPOSE_EMAIL_WARNING' => ' Warning : Your email might land in spam. Add Vtiger as an authorized sender for your domain. Learn more',
 	// Common Link Labels
+    'LBL_REARRANGE_DASHBOARD_TABS' => 'Organizuj Tabsy',
+    'LBL_DONE' => 'Gotowe',
+    'LBL_DELETE_DASHBOARD_TAB' =>'Usuń tab',
+    'LBL_DASHBOARD_TAB_ALREADY_EXIST' => 'Nazwa już istnieje',
+    'LBL_TABS_LIMIT_EXCEEDED' => 'Sorry! Limit tabów to 10',
+    'LBL_TODOS' => 'Taski',
 	'LBL_LAST_VIEWED_RECORDS' => 'Ostatnie przeglądane rekordy',
 	'LBL_DASHBOARD' => 'Tablica',
 	'LBL_USER_SETTINGS' => 'Ustawienia użytkownika',
 	'LBL_MY_PREFERENCES' => 'Moje ustawienia',
 	'LBL_SIGN_OUT' => 'Wyloguj',
 	'LBL_HELP' => 'Pomoc (EN)',
+    'LBL_DOCUMENTATION' => 'Dokumentacja',
+    'LBL_VIDEO_TUTORIAL' => 'Poradnik',
 	'LBL_FEEDBACK' => 'Informacja do producenta',
 	'LBL_CHAT_SUPPORT'=>'Język Wsparcie',
 	'LBL_CRM_SETTINGS' => 'Konfiguracja systemu',
@@ -83,6 +109,24 @@ $languageStrings = array(
 	'LBL_ANNOUNCEMENT' => 'Ogłoszenie',
 	'LBL_CALENDAR' => 'Kalendarz',
 	'LBL_POST' => 'Dodaj komentarz',
+    'LBL_GUIDER' => 'Проводителя',
+    'LBL_VIDEOS' => 'Wideo',
+    'LBL_DISPLAY_TYPE' => 'Typ Wyświetlacza',
+    'LBL_DISPLAY_WIDETYPE' => 'Szeroki',
+    'LBL_DISPLAY_MEDIUMTYPE' => 'Średni',
+    'LBL_DISPLAY_NARROWTYPE' => 'Wąskie',
+    'LBL_TAG_THIS_RECORD' => 'Tag ten wpis',
+    'LBL_SAME_TAG_EXISTS' => 'Duplikat tag istnieje',
+    'LBL_MAKE_PUBLIC' => 'Manifestować',
+    'LBL_PAGE' => 'Strona',
+
+
+
+    'LBL_INFO' => 'Info',
+    'LBL_CANT_MOVE_FROM_PUBLIC_TO_PRIVATE' => 'Nie są w stanie poruszać się od wspólna tag dla prywatnego cechy.',
+    'LBL_EDIT_TAG' => 'Edytowanie Znacznika',
+    'LBL_NO_TAG_EXISTS' => 'Brak tagów' ,
+    'LBL_RELATED_USERS' => 'Powiązani użytkownicy',
 
 	// Common Fields
 	'LBL_USER' => 'Użytkownik',
@@ -99,11 +143,18 @@ $languageStrings = array(
 	'LBL_LOADING_LISTVIEW_CONTENTS'	=> 'Ładowanie, proszę czekać...',
 
 	// Detail View
+    'LBL_HISTORY' => 'Historia',
 	'LBL_UPDATES' => 'Aktualizacje',
 	'LBL_COMPLETE_DETAILS' => 'Pokaż szczegóły',
 	'LBL_SUMMARY_DETAILS' => 'Pokaż podsumowanie',
 	'LBL_ADD_NEW_COMMENT' =>'Dodaj nowy komentarz',
 	'LBL_NO_UPDATES' => 'Brak aktualizacji',
+    'LBL_ACTIVITIES' => 'Działalność',
+    'LBL_NO_PENDING_ACTIVITIES' => 'Nie ma czasu działania',
+    'LBL_SUMMARY' => 'Cv',
+    'LBL_KEY_FIELD' => 'Pola Kluczowego',
+    'LBL_DETAILS' => 'Szczegóły',
+    'LBL_NAME_EMAIL' => 'Imię i email',
 
 	// Popup window
 	'LBL_SEARCH_FOR' => 'Szukana fraza',
@@ -112,6 +163,7 @@ $languageStrings = array(
 	'LBL_SEARCH_BUTTON' => 'Wyszukaj',
 	'LBL_ADVANCE_SEARCH' => 'Szukanie zaawansowane',
 	'LBL_LOADING_PLEASE_WAIT' => 'Ładowanie, proszę czekać...',
+
 
 	//DropDown Category
 	'LBL_USERS' => 'Użytkownicy',
@@ -122,7 +174,9 @@ $languageStrings = array(
 	'LBL_SIMPLE_FORM' => 'Formularz uproszczony',
 
 	//Recent Comments
-	'LBL_ADD_YOUR_COMMENT_HERE' => 'Dodaj swój komentarz tutaj...',
+	'LBL_IS_REMOVED' => 'usunięty',
+    'LBL_ADD_YOUR_COMMENT_HERE' => 'Dodaj swój komentarz tutaj...',
+    'LBL_REASON_FOR_CHANGING_COMMENT' => 'Podstaw do zmiany komentarza',
 	'LBL_REPLY' => 'Odpowiedz',
 	'LBL_VIEW_THREAD' => 'Przeglądaj wątek',
 	'LBL_NO_COMMENTS' => 'Brak komentarzy',
@@ -152,44 +206,35 @@ $languageStrings = array(
 	'PurchaseOrder'=>'Zlecenia kupna',
 	'SalesOrder'=>'Zlecenia sprzedaży',
 	'Invoice'=>'Faktury',
-        'Portal' => 'Nasze strony',
-        'Email Templates' => 'Email Template',
-        'Print Templates' => 'Wydrukuj szablon',
-
+    'MailManager' => 'Mail Manager',
+    'Activities' => 'Działalność',
+    'Portal' => 'Nasze strony',
+    'Email Templates' => 'Email Template',
+    'Recycle Bin' => 'Kosz',
 
 	//Basic String Translation
 	'LBL_ADD_RECORD' => 'Dodaj rekord',
 	'LBL_RECENTLY_MODIFIED' => 'Ostatnio zmodyfikowane',
 	'LBL_RECORDS_LIST' => 'Lista rekordów',
 	'LBL_RECORD_SUMMARY' => 'Podsumowanie modułu',
+    'LBL_RECORD_SUMMARY' => 'Podsumowanie rekordu',
 	'LBL_ACCESS_DENIED_FOR' => 'Dostęp zabroniony dla',
 	'LBL_GO_BACK' => 'Cofnij',
 	'LBL_NO_DATA_AVAILABLE' => 'Brak danych',
 
 	// Global Search
 	'LBL_GLOBAL_SEARCH' => 'Wpisz wyrażenie i wciśnij enter',
+    'LBL_ALL_RECORDS' => 'Wszystkie Wpisy',
+    'LBL_NO_RECORDS_FOUND' => 'Nie znaleziono wpisów',
 
 	//Filters & Advance Filter
 	'LBL_AND' => 'i',
 	'LBL_OR' => 'lub',
-	'LBL_NONE' => 'żaden',
-	'LBL_APPROVE' => 'zaakceptowany',
-	'LBL_HAS_CHANGED' => 'zmienił się',
-	'LBL_HAS_CHANGED_TO' => 'zmienił się',
-	'LBL_HAS_CHANGED_FROM' => 'zmieniła się od',
-	'LBL_LESS_THAN_OR_EQUAL_TO' => 'mniejszy lub równy',
-	'LBL_GREATER_THAN_OR_EQUAL_TO' => 'większe bądź równe',
-	'LBL_IS_NOT' => 'nie jest',
-	'LBL_IS_ADDED' => 'jest dodany',
-	'LBL_IS_TODAY' => 'jest dzisiaj',
-	'LBL_IS_TOMORROW' => 'jutro',
-	'LBL_IS_YESTERDAY' => 'to wczoraj',
-	'LBL_LESS_THAN_DAYS_LATER' => 'mniej niż dzień później',
-	'LBL_MORE_THAN_DAYS_LATER' => 'więcej niż dzień później',
-	'LBL_DENY' => 'zabroniony',
-	'LBL_EQUALS' => 'taniej',
-	'LBL_NOT_EQUAL_TO' => 'niewystarczająco',
-	'LBL_STARTS_WITH' => 'zaczyna się',
+    'LBL_APPLBL_NONEROVE' => 'Zatwierdzić',
+    'LBL_DENY' => 'zabroniony',
+    'LBL_EQUALS' => 'równy',
+    'LBL_NOT_EQUAL_TO' => 'nierówny',
+    'LBL_STARTS_WITH' => 'zaczyna się',
 	'LBL_ENDS_WITH' => 'kończy się',
 	'LBL_CONTAINS' => 'zawiera',
 	'LBL_DOES_NOT_CONTAIN' => 'nie zawiera',
@@ -200,10 +245,9 @@ $languageStrings = array(
 	'LBL_BEFORE' => 'przed',
 	'LBL_AFTER' => 'po',
 	'LBL_BETWEEN' => 'pomiędzy',
-    'LBL_IS_NOT_EMPTY'=> 'nie jest pusty',
 	'LBL_SEARCH' => 'Szukaj',
-	'LBL_SEARCH_IN' => 'szukaj w',
-	'LBL_ADD_CONDITION' => 'Dodaj warunek',
+    'LBL_SEARCH_IN' => 'szukaj w',
+    'LBL_ADD_CONDITION' => 'Dodaj warunek',
 	'LBL_ADD_GROUP' => 'Dodaj grupę warunków',
 	'LBL_FILTER_CONDITIONS' => 'Lista Warunki',
 	'LBL_ALL_CONDITIONS' => 'Wszystkie warunki',
@@ -239,28 +283,23 @@ $languageStrings = array(
 	'LBL_QTY' => 'Ilość',
 	'LBL_LIST_PRICE' => 'Cena jednostkowa',
 	'LBL_TOTAL' => 'Netto',
-	'LBL_NET_PRICE' => 'Brutto',
+	'LBL_NET_PRICE' => 'Netto',
 	'LBL_DISCOUNT' => 'Rabat',
 	'LBL_TOTAL_AFTER_DISCOUNT' => 'Netto po rabacie',
 	'LBL_TAX' => 'Podatek',
 	'LBL_ADD_PRODUCT' => 'Dodaj produkt',
 	'LBL_ADD_SERVICE' => 'Dodaj usługę',
-	'LBL_NET_TOTAL' => 'Brutto',
-	'LBL_OVERALL_DISCOUNT' => 'Ogólnie Rabat',
-	'LBL_CHARGES' => 'Opłaty',
-	'LBL_CHARGES_TOTAL' => 'Opłaty Razem',
-	'LBL_TAXES_ON_CHARGES' => 'Podatki w sprawie opłat',
-	'LBL_DEDUCTED_TAXES' => 'Deducted Podatki',
-	'LBL_DEDUCTED_TAXES_TOTAL' => 'Deducted Podatki Razem',
-	'LBL_DEFAULT' => 'Domyślny',
-	'LBL_ITEM' => 'Pozycja',
-	'LBL_SHIPPING_AND_HANDLING_CHARGES' => 'Koszty dostawy i transportu',
+    'LBL_LI_ADD_PRODUCT' => 'Product',
+    'LBL_LI_ADD_SERVICE' => 'Service',
+    'LBL_ITEMS_TOTAL' => 'Elementy Ogólnej',
+    'LBL_SHIPPING_AND_HANDLING_CHARGES' => 'Koszty dostawy i transportu',
+    'LBL_PRE_TAX_TOTAL' => 'Do Opodatkowania Ogółem',
 	'LBL_TAX_FOR_SHIPPING_AND_HANDLING' => 'Podatek od kosztów dostawy i transportu',
 	'LBL_SET_SHIPPING_AND_HANDLING_TAXES_FOR' => 'Ustaw podatek od dostawy/transportu',
 	'LBL_ADJUSTMENT' => 'Korekta kwotowa',
 	'LBL_DEDUCT' => 'Odejmij',
 	'LBL_GRAND_TOTAL' => 'Brutto z kosztami dostawy',
-	'LBL_ZERO_DISCOUNT' => 'Brak rabatu',
+    'LBL_ZERO_DISCOUNT' => 'Brak rabatu',
 	'LBL_OF_PRICE' => ' Cena',
 	'LBL_DIRECT_PRICE_REDUCTION' => 'Bezpośrednia redukcja ceny',
 	'LBL_SET_DISCOUNT_FOR' => 'Ustaw rabat na',
@@ -271,11 +310,27 @@ $languageStrings = array(
 	'LBL_DIRECT_AMOUNT_DISCOUNT' => 'Bezpośrednia redukcja ceny',
 	'LBL_FINAL_DISCOUNT_AMOUNT' => 'Łączna redukcja ceny',
 	'LBL_MORE_CURRENCIES' => 'więcej walut',
+    'LBL_SET_TAX_FOR' => 'Ustawić podatek dla',
+    'LBL_GROUP_TAX' => 'Grupa Podatkowych',
+    'LBL_BILLING_ADDRESS_FROM' => "Adres kopię płatności z"   , // TODO: Review
+	'LBL_SHIPPING_ADDRESS_FROM' => "Kopiuj adres wysyłki z"  , // TODO: Review
+	'LBL_COPY_SHIPPING_ADDRESS' => 'Adres wysyłki'            , // TODO: Review
+	'LBL_COPY_BILLING_ADDRESS' => 'Adres rozliczeniowy',
+	'LBL_OVERALL_DISCOUNT' => 'Ogólnie Rabat',
+	'LBL_CHARGES' => 'Opłaty',
+	'LBL_CHARGES_TOTAL' => 'Opłaty Razem',
+	'LBL_TAXES_ON_CHARGES' => 'Podatki w sprawie opłat',
+	'LBL_DEDUCTED_TAXES' => 'Deducted Podatki',
+	'LBL_DEDUCTED_TAXES_TOTAL' => 'Deducted Podatki Razem',
+	'LBL_DEFAULT' => 'Domyślny',
+    'LBL_ITEM' => 'Pozycja',
+	'LBL_ADD_DASHBOARD' =>'Add dashboard',
 
-	//DetailView Actions
+    //DetailView Actions
 	'LBL_CREATE' => 'Utwórz',
 	'LBL_GENERATE' => 'Generuj',
     'LBL_DUPLICATE' => 'Duplikuj',
+    'Add Note' => 'Dodaj Dokument',
 
 	//Dashboard String
 	'LBL_ADD_WIDGET' => 'Dodaj okno',
@@ -284,8 +339,11 @@ $languageStrings = array(
 	'LBL_CLOSE' => 'Zamknij',
 	'LBL_ALL' => 'Wszsytkie',
 	'LBL_UPDATED' => 'zaktualizował',
+
+
 	'LBL_FROM' => 'Od',
 	'LBL_TO' => 'z',
+
 	'LBL_ON' => 'w',
 	'LBL_OF' => 'wyłączony',
 	'LBL_BY' => 'przez',
@@ -299,6 +357,7 @@ $languageStrings = array(
 	'LBL_REMOVE' => 'Usuń',
 	'LBL_AT' => 'w',
 	'LBL_MINE' => 'Moje',
+
 	'History' => 'Historia',
 	'Upcoming Tasks' => 'Nadchodzące zadania',
 	'LBL_YEAR' => 'rok',
@@ -307,8 +366,10 @@ $languageStrings = array(
 	'LBL_MONTHS' => 'miesiące',
 	'LBL_DAY' => 'dzień',
 	'LBL_DAYS' => 'dni',
+
 	'LBL_HOUR' => 'godzina',
 	'LBL_HOURS' => 'godziny',
+
 	'LBL_MINUTE' => 'minuta',
 	'LBL_MINUTES' => 'minuty',
 	'LBL_SECOND' => 'sekunda',
@@ -317,7 +378,6 @@ $languageStrings = array(
 	'LBL_CUSTOM_INFORMATION' => 'Informacje custom',
 	'LBL_NO_RECENT_UPDATES' => 'Brak aktualizacji',
 	'LBL_NO_DATA' => 'No Data',
-	'LBL_NO_RECENT_UPDATES' => 'Brak aktualizacji',
 	'LBL_PERMISSION_DENIED' => 'Brak dostępu',
 	'LBL_HANDLER_NOT_FOUND' => 'Handler nieodnaleziony',
 	'LBL_FILTER' => 'Lista',
@@ -325,20 +385,27 @@ $languageStrings = array(
 	'LBL_DAYS' => 'dni',
 	'LBL_COMPLETED' => 'kompletny',
 	'LBL_AGO' => 'temu',
-	'LBL_TODAY' => 'dzisiaj',
-	'LBL_TOMORROW' => 'jutro',
-	'LBL_YESTERDAY' => 'wczoraj',
-	'LBL_CHANGED' => 'zmieniony',
-	'Single_Users' => 'Użytkownik',
+    'LBL_CHANGED' => 'zmieniony',
+    'SINGLE_Users' => 'Użytkownik',
 	'LBL_MATCHED_THIS_CRITERIA'=> 'dopasowany według kryteriów',
 	'LBL_NO_SCHEDULED_ACTIVITIES' => 'Brak nadchodzących wydarzeń',
 	'LBL_NO_OVERDUE_ACTIVITIES' => 'Brak zaległych wydarzeń',
 	'LBL_NO_UPDATES_OR_COMMENTS' => 'Brak aktualizacji lub komentarzy',
-        'LBL_ALL_USERS'                => 'Wszyscy użytkownicy',
-        'LBL_BOTH'                     => 'Zarówno',
-        'LBL_SHOW'                     => 'Show',
+    'LBL_MINI_LIST' => 'Mini Lista',
+    'LBL_NOTEPAD' => 'Notatnik',
+    'LBL_NOTEPAD_NAME' => 'Notatnik Domeny',
+    'LBL_NOTEPAD_CONTENT' => 'Zawartość Notatnika',
+    'LBL_LAST_SAVED_ON' => 'Ostatni zapisany na',
+    'Mini List' => 'Mini Lista',
+    'Notebook' => 'Notatnik',
+    'LBL_RESULT_FOR_THE_TAG' => 'Wyniki dla tagu',
+    'LBL_ALL_USERS'                => 'Wszyscy użytkownicy',
+    'LBL_BOTH'                     => 'Zarówno',
+    'LBL_SHOW'                     => 'Show',
+    'LBL_MY' => 'Mój',
 	'LBL_SELECT_DATE_RANGE' => 'Wybierz zakres dat',
-	// Basic Strings- custom view
+
+// Basic Strings- custom view
 	'LBL_VIEW_NAME' => 'Nazwa listy',
 	'LBL_CREATE_VIEW' => 'Utwórz nową listę',
 	'LBL_BASIC_DETAILS' => 'Podstawowe informacje',
@@ -354,7 +421,6 @@ $languageStrings = array(
 	'LBL_OR' => 'lub',
 	'LBL_ADD_MORE_COLUMNS' => 'Kliknij, aby zaznaczyć pola',
 	'LBL_ADD_GROUP' => 'Dodaj grupę',
-
 
 	//DateFilter Conditions
 	'LBL_CUSTOM' => 'Własny',
@@ -374,7 +440,7 @@ $languageStrings = array(
 	'LBL_CURRENT_MONTH' => 'Obeny Miesiąc',
 	'LBL_NEXT_MONTH' => 'Następny Miesiąc',
 	'LBL_LAST_7_DAYS' => 'Ostatnie 7 dni',
-        'LBL_LAST_14_DAYS' => 'Ostatnie 14 dni',
+    'LBL_LAST_14_DAYS' => 'Ostatnie 14 dni',
 	'LBL_LAST_30_DAYS' => 'Ostatnie 30 dni',
 	'LBL_LAST_60_DAYS' => 'Ostatnie 60 dni',
 	'LBL_LAST_90_DAYS' => 'Ostatnie 90 dni',
@@ -385,6 +451,7 @@ $languageStrings = array(
 	'LBL_NEXT_120_DAYS' => 'Następne 120 dni',
 
 	//advanced Filter Options
+	'LBL_NONE' => 'żaden',
 	'LBL_EQUALS' => 'równe',
 	'LBL_NOT_EQUAL_TO' => 'nie równe',
 	'LBL_STARTS_WITH' => 'zaczyna się od',
@@ -398,11 +465,28 @@ $languageStrings = array(
 	'LBL_BEFORE' => 'przed',
 	'LBL_AFTER' => 'po',
 	'LBL_BETWEEN' => 'pomiędzy',
+    'LBL_IS_EMPTY' => 'pusty',
+    'LBL_IS_NOT_EMPTY'=> 'nie jest pusty',
+	'LBL_APPROVE' => 'zaakceptowany',
+	'LBL_HAS_CHANGED' => 'zmienił się',
+	'LBL_HAS_CHANGED_TO' => 'zmienił się',
+	'LBL_HAS_CHANGED_FROM' => 'zmieniła się od',
+	'LBL_LESS_THAN_OR_EQUAL_TO' => 'mniejszy lub równy',
+	'LBL_GREATER_THAN_OR_EQUAL_TO' => 'większe bądź równe',
+    'LBL_IS_NOT' => 'nie jest',
+	'LBL_IS_ADDED' => 'jest dodany',
+	'LBL_IS_TODAY' => 'jest dzisiaj',
+	'LBL_IS_TOMORROW' => 'jutro',
+	'LBL_IS_YESTERDAY' => 'to wczoraj',
+	'LBL_LESS_THAN_DAYS_LATER' => 'mniej niż dzień później',
+	'LBL_MORE_THAN_DAYS_LATER' => 'więcej niż dzień później',
 
-	//Detail view summary widgets
+//Detail view summary widgets
 	'LBL_OWNER' => 'Właściciel',
 	'LBL_CREATED_ON' => 'Utworzono',
 	'LBL_MODIFIED_ON' => 'Zmodyfikowano',
+
+
 
     //calender set-reminder
     'LBL_BEFORE_EVENT' => ' Przed zdarzeniem',
@@ -424,7 +508,12 @@ $languageStrings = array(
 	'Tickets by Status' => 'Zgłoszenia według statusu',
 	'Open Tickets' => 'Otwarte Zgłoszenia',
 
-	//Exports strings
+
+
+
+
+
+    //Exports strings
 	'LBL_EXPORT_ALL_DATA' => 'Wyeksportować wszystkie dane',
 	'LBL_EXPORT_DATA_IN_CURRENT_PAGE' => 'Eksport danych z aktualnej strony',
 	'LBL_EXPORT_SELECTED_RECORDS' => 'Eksport zaznaczonych rekordów',
@@ -443,7 +532,7 @@ $languageStrings = array(
 
     'LBL_SELECT_STATUS' => 'Wybierz status',
 
-	// Added Common Keys for all modules
+    // Added Common Keys for all modules
 	'Account Name' => 'Nazwa Kontrahenta',
 	'Add Comment' => 'Dodaj komentarz',
 	'Adjustment' => 'Korekta',
@@ -543,6 +632,7 @@ $languageStrings = array(
 	'Discount Percent' => 'Procent rabatu',
 	'Discount Amount' => 'Kwota rabatu',
 	'Item Discount Amount' => 'Kwota rabatu dla wiersza',
+    'Net Price' => 'Cena netto',
 	'Item Discount Percent' => 'Procent rabatu dla wiersza',
 
 	'Due Date' => 'Data realizacji',
@@ -552,19 +642,15 @@ $languageStrings = array(
 	'Other Email' => 'Inny email',
 	'Email Opt Out' => 'Czy wyłączyć system powiadomień?',
     'Is Converted From Lead' => 'Jest przekształcany z ołowiu'  ,
-
 	'Expected Close Date' => 'Planowana data zakończenia',
-
-	'Fax' => 'Faks',
+   	'Fax' => 'Faks',
 
 	'Last Name' => 'Nazwisko',
 	'First Name' => 'Imię',
 
 	'High' => 'Wysoki',
 	'Low' => 'Niski',
-
 	'In Progress' => 'W realizacji',
-
 
 	'Subject' => 'Temat',
 	'Shipping Address' => 'Ulica dostawy',
@@ -591,11 +677,6 @@ $languageStrings = array(
 	'S&H Amount' => 'Koszt dostawy i doajzdu',
 	'Status' => 'Status',
 	'Vendor Name'=>'Nazwa dostawcy',
-
-	'LBL_BILLING_ADDRESS_FROM'     => "Adres kopię płatności z"   , // TODO: Review
-	'LBL_SHIPPING_ADDRESS_FROM'    => "Kopiuj adres wysyłki z"  , // TODO: Review
-	'LBL_COPY_SHIPPING_ADDRESS'    => 'Adres wysyłki'            , // TODO: Review
-	'LBL_COPY_BILLING_ADDRESS'     => 'Adres rozliczeniowy'             ,
 
 	'LBL_ADDRESS_INFORMATION' => 'Informacje adresowe',
 	'LBL_DESCRIPTION_INFORMATION' => 'Szczegóły opisu',
@@ -644,6 +725,132 @@ $languageStrings = array(
 	'LBL_VTIGER_CRM_HONEST_OPEN_SOURCE' => 'vtiger CRM Honest Open Source',
 	'LBL_CUSTOMIZE_MAIN_MENU' => 'Dostosuj menu główne',//TODO REVIEW
 
+
+    //Weekdays in 3 letters translations
+    'LBL_Sun' => 'Nd',
+    'LBL_Mon' => 'Pn',
+    'LBL_Tue' => 'Wt',
+    'LBL_Wed' => 'śr',
+    'LBL_Thu' => 'Cz',
+    'LBL_Fri' => 'Pt',
+    'LBL_Sat' => 'Sb',
+
+    //Months in 3 letters translations
+    'LBL_Jan' => 'Jan',
+    'LBL_Feb' => 'Luty',
+    'LBL_Mar' => 'Mar',
+    'LBL_Apr' => 'Kwi',
+    'LBL_May' => 'Może',
+    'LBL_Jun' => 'Cze',
+    'LBL_Jul' => 'Jul',
+    'LBL_Aug' => 'Sie',
+    'LBL_Sep' => 'Wrzesień',
+    'LBL_Oct' => 'Paź',
+    'LBL_Nov' => 'Noego',
+    'LBL_Dec' => 'Dec',
+
+    'LBL_CALENDAR_SETTINGS' => 'Ustawienia Kalendarza',
+    'Reminder Interval' => 'Pop-Up Przypomnienie Odstępu',
+
+    //Translations used in inventory modules for address
+    'SINGLE_Accounts' => 'Kontrahent',
+	'SINGLE_Contacts' => 'Kontakt',
+    'HelpDesk' => 'Bilety lotnicze',
+    'LBL_TAG_CLOUD' => 'Chmura Tagów',
+
+    'LBL_NO_RECORDS' => 'Brak Wpisów',
+    'LBL_NO_RELATED' => 'Nie Związanych',
+    'LBL_GLOBAL_SEARCH_MAX_MESSAGE' => 'Tylko pierwsze 100 wyników wszystkich modułów przedstawiono poniżej. Dla modułu konkretne wyniki, Proszę wybrać odpowiedni moduł i wyszukiwanie',
+    'LBL_GLOBAL_SEARCH_MAX_MESSAGE_FOR_MODULE' => 'Tylko pierwsze 100 wyników przedstawiono poniżej. Uprzejmie zrobić wyszukiwanie Zaawansowane jeśli nie Jesteś zadowolony z wyniku',
+
+    // used in reports detail view
+    'LBL_ACTION' => 'Akcja',
+    'LBL_NOTE' => 'Uwaga',
+    'LBL_SELECT_OPTION' => 'Wybierz opcję',
+
+    //Module Manager
+    'LBL_TOOLTIP' => 'Zarządzanie Tooltip',
+    'LBL_MODULE_SEQUENCE_NUMBERING' => '%s numeracji',
+    'LBL_CUSTOM_FIELD_MAPPING' => 'Wyświetlanie Pól Niestandardowych',
+    'LBL_WEBFORMS' => 'Formularzy',
+
+    //Compose Email Strings
+    'SINGLE_Emails' => 'E-mail',
+    'Emails' => 'E-maile',
+    'LBL_SELECT_EMAIL_IDS' => 'Wybierz Adresy E-Mail',
+    'LBL_SUBJECT' => 'Temat',
+    'LBL_ATTACHMENT' => 'Załącznik',
+    'LBL_BROWSE_CRM' => 'Wyświetl w programie CRM',
+    'LBL_SEND' => 'Wysłać',
+    'LBL_SAVE_AS_DRAFT' => 'Zapisz jako wersję roboczą',
+    'LBL_GO_TO_PREVIEW' => 'Wejść w podgląd',
+    'LBL_SELECT_EMAIL_TEMPLATE' => 'Wybierz Szablon E-Mail',
+    'LBL_COMPOSE_EMAIL' => 'Napisz E-Mail',
+    'LBL_CC' => 'Sześcian.',
+    'LBL_BCC' => 'SC',
+    'LBL_ADD_CC' => 'Dodać Kostki.',
+    'LBL_ADD_BCC' => 'Dodaj BCC',
+    'LBL_MAX_UPLOAD_SIZE' => 'Maksymalny rozmiar przesyłanego pliku wynosi',
+    'LBL_EXCEEDED' => 'Przekroczył',
+    'LBL_OPERATION_NOT_PERMITTED' => 'Operacja nie jest dozwolona',
+    'LBL_MERGE' => 'Korespondencji seryjnej',
+	'LBL_FIND_DUPLICATES' => 'Find Duplicates',
+    'LBL_MERGING_CRITERIA_SELECTION' => 'Łączenie Kryteriów Wyboru',
+    'LBL_AVAILABLE_FIELDS' => 'Dostępne Pola',
+    'LBL_MERGE_RECORDS_DESCRIPTION' => 'Podstawowy wpis zostanie zapisany po fuzji. Możesz wybrać kolumny, aby zapisać wartości.
+        Pozostałe wpisy zostaną usunięte, a odpowiednia informacja zostanie złączone.',
+    'LBL_MERGE_RECORDS_IN' => 'Scalanie Wpisów W',
+    'LBL_FIELDS' => 'Pola',
+    'LBL_RECORD' => 'Wpis',
+    'LBL_NO_DUPLICATED_FOUND' => 'Nie znalazłeś duplikaty',
+    'LBL_MERGE_SELECT' => 'Połączyć Wybrać',
+
+    //sbproducts translation
+    'LBL_BACK_TO_PRODUCTS' => 'Z powrotem produkty',
+
+    //Translations used for Export to Pdf
+    'Valid Date' => 'Faktyczna Data',
+    'Phone: ' => 'Telefon: ',
+    'Issued Date' => 'Wydane Data',
+    'Shipping & Handling Charges' => 'Wysyłka & Opłat Manipulacyjnych',
+    'Shipping & Handling Tax:' => 'Koszty Wysyłki I Obsługi Podatkowej:',
+    'Discount' => 'Rabat',
+    'Net Total' => 'Ogółem',
+    'Product Code' => 'Kod Produktu',
+    'Customer Name' => 'Nazwa Klienta',
+    'Price' => 'Cena',
+    'Tax:' => 'Podatek:',
+    'Contact Name' => 'Osoba kontaktowa',
+    'Grand Total:' => 'Ogółem:',
+    'Fax: ' => 'Faks: ',
+    'Website: ' => 'Strona www: ',
+    'Tax' => 'Podatek',
+    'LBL_ALPHABETS' => 'A,B,C,D,E,F,G,H,I,K,K,L,M,N,O,P,P,P,Z,T,U,V, W,X,Y,Z',
+
+    //Realted tab strings
+    'Service Contracts' => 'Kontrakty Serwisowe',
+    'Projects' => 'Projekty',
+    'Sales Order' => 'Zamówienia Na Sprzedaż',
+    'Purchase Order' => 'Zamówienia Na Zakup',
+    'Payments' => 'Płatności',
+    'List and Campaigns' => 'Lista i kampanii',
+    'Project Tasks' => 'Zadania Projektu',
+    'Project Milestones' => 'Kamienie Milowe Projektu',
+
+    'Labels Editor' => 'Tagi Edytor',
+    'LBL_IGNORE_EMPTY_VALUES' => 'Ignoruj puste wartości',
+
+    //Related tabs of Products
+    'Product Bundles' => 'Pakiety Produktów.',
+    'Parent Product' => 'Rodzic Produkt',
+	'LBL_PRODUCT_BUNDLE' => 'Pakiet produktów',
+	'LBL_EDIT_QUANTITY' => 'Edit Ilość',
+	'LBL_ADD_TO_PRODUCTS' => 'Dodaj',
+
+    'LBL_MANAGE_USERS' => 'Zarządzanie Użytkownikami',
+    'LBL_TRANSFER_OWNERSHIP' => 'Przeniesienie własności',
+    'LBL_SELECT_RELATED_MODULES' => 'Wybierz Związanych Z Nimi Modułów',
+    'LBL_ASSIGNED_TO' => 'Zaplanowane',
 	//Comments Field Labels for Workflow
 	'Comment' => 'Komentarz',
 	'Last Comment' => 'Ostatni komentarz',
@@ -657,50 +864,31 @@ $languageStrings = array(
 	'LBL_SUBMIT_FEEDBACK' => 'Prześlij opinię',
 	'LBL_DONT_SHOW_AGAIN' => 'Nie pokazuj tego ponownie',
 	'LBL_CONTINUE_TO_OLD_LOOK' => 'Dalej stary wygląd',
-
-	//PrintTemplate Links
-    'Print' => 'Drukuj / Eksportuj do PDF',
-    'Print Templates' => 'Szablony Wydrukować',
-
-    'LBL_TRANSFER_OWNERSHIP' => 'Przeniesienie własności',
+    'LBL_LEFT_PANEL_SHOW_HIDE' => 'Lewy Panel Pokaż/Ukryj',
 
     //Products Popup View
     'NOT_A_BUNDLE' => 'Nie wiązka',
     'LBL_SUB_PRODUCTS' => 'Produkty cząstkowe',
     'LBL_MARK_AS_HELD' => 'Oznacz jako przeznaczone',
+    'LBL_MARK_AS_COMPLETED' => 'LBL_MARK_AS_COMPLETED',
     'LBL_SMS_MAX_CHARACTERS_ALLOWED' => 'Maksymalnie 160 znaków są dozwolone dla wiadomości tekstowej',
     'LBL_HIDE_COMPLETED_EVENTS' => 'Ukryj Wykonane Wydarzenia Kalendarium',
     'LBL_SETUP_WEBFORMS' => 'Konfiguracja formularzy WWW',
     'LBL_SPECIAL_OPTIONS' => 'Opcje specjalne',
     'LBL_PARENT_OWNER' => 'Rodzic Właściciel rekordu',
+    'LBL_PASSWORD_LINK_EXPIRED_OR_INVALID_PASSWORD' => 'Hasło linki wygasły lub zostały wprowadzone nieprawidłowe hasło',
 
     // Recurring Invoice
     'Half-Yearly' => 'Co pół roku',
     'LBL_FULLSCREEN' => 'Pełny ekran',
+    'LBL_SETUP_WEBFORMS' => 'Konfiguracja formularzy WWW',
     'LBL_MODULE_DISABLED' => ' Moduł jest wyłączony',
     'Organization Name' => 'Nazwa organizacji',
-
+    'LBL_SOCIAL_TWITTER_WIDGET' => 'Aktywny Twitter',
+    'LBL_WEEK' => 'Tydzień',
     // Convert Lead and Potential
-    'LBL_CONVERT_ERROR_TITLE' => 'Moduły wyłączone',
 	'CANNOT_CONVERT' => 'Nie można przekonwertować',
-	'LBL_FOLLOWING_ARE_POSSIBLE_REASONS' => 'Poniżej może znajdować się jeden z możliwych powodów:',
-    'LBL_MANDATORY_FIELDS_ARE_EMPTY' => 'Niektóre wartość z obowiązkowych pól są puste',
-	'LBL_WEEK' => 'Tydzień',
-
-    'LBL_ORIGIN' => 'Pochodzenie',
-    'SENT' => 'CRM',
-    'SAVED' => 'Projekt',
-    'MailManager' => 'Mail Manager',
-    'MAILSCANNER' => 'Mail Converter',
-	'LBL_SENDER_NAME' => 'Nazwa nadawcy',
-
-    'Mobile Call' => 'Mobile Call',
-	'Related To' => 'Związanych z',
-    'Organization Name' => 'Nazwa organizacji',
-
-    // Convert Lead and Potential
     'LBL_CONVERT_ERROR_TITLE' => 'Moduły wyłączone',
-	'CANNOT_CONVERT' => 'Nie można przekonwertować',
 	'LBL_FOLLOWING_ARE_POSSIBLE_REASONS' => 'Poniżej może znajdować się jeden z możliwych powodów:',
     'LBL_MANDATORY_FIELDS_ARE_EMPTY' => 'Niektóre wartość z obowiązkowych pól są puste',
 
@@ -709,6 +897,20 @@ $languageStrings = array(
     'LBL_PHONEFORMAT_WARNING_CONTENT' => 'Numer E.164 formatowanie może mieć maksymalnie piętnastu cyfr i są zwykle zapisywane w następujący sposób: [+] [Kod kraju] [numer abonenta wraz z numerem kierunkowym]
                                            Na przykład, aby przekonwertować numer telefonu w USA (415 599 2671) do formatu E.164, należałoby dodać prefiks \'+\' i kod kraju (co jest 1) przed numerem (+1 415 599 2671 ). W Wielkiej Brytanii i wielu innych krajach na arenie międzynarodowej, lokalne wybieranie wymaga dodanie 0 przed numerem abonenta. Jednak stosowanie formatu E.164 ten 0 muszą być usunięte.Liczba takich jak 020 7183 8750 w Wielkiej Brytanii będą formatowane jako 44 20 7183 8750.ss',
     'LBL_WARNING' => 'ostrzeżenie',
+    'LBL_ORIGIN' => 'Pochodzenie',
+    'SENT' => 'Wysłany',
+    'RECEIVED' => 'Otrzymany',
+    'QUEUED'=> 'Zakolejkowany',
+
+    'SAVED' => 'Zapisany',
+
+    'MAILSCANNER' => 'Mail Converter',
+	'LBL_SENDER_NAME' => 'Nazwa nadawcy',
+    'SMSNotifier' => 'Powiadamiania SMS',
+
+    'Mobile Call' => 'Mobile Call',
+	'Related To' => 'Związanych z',
+    'Organization Name' => 'Nazwa organizacji',
 
     // Date Conditions
     'LBL_LESS_THAN_DAYS_AGO' => 'Mniej niż dzień temu',
@@ -721,21 +923,57 @@ $languageStrings = array(
     'LBL_LESS_THAN_HOURS_LATER' => 'Mniej niż godziny później',
     'LBL_MORE_THAN_HOURS_BEFORE' => 'Ponad godzin przed',
     'LBL_MORE_THAN_HOURS_LATER' => 'Więcej niż godziny później',
-
-	//Related tabs of Products
-	'LBL_PRODUCT_BUNDLE' => 'Pakiet produktów',
-	'LBL_EDIT_QUANTITY' => 'Edit Ilość',
-	'LBL_ADD_TO_PRODUCTS' => 'Dodaj',
     'LBL_INTERNAL_COMMENT' => 'Wewnętrzne komentarz',
-    'LBL_SEND_PDF_FOR_SIGNING' => 'Wyślij PDF do podpisania',
     'LBL_NOTE_EXISTING_ATTACHMENTS_WILL_BE_REPLACED' => 'Uwaga: Istniejące narzędzia (obrazów / plików) zostanie zastąpiony',
+
+    //common standard fields
+    'Created By' => 'Utworzony przez',
+
+    'LBL_SEND_PDF_FOR_SIGNING' => 'Wyślij PDF do podpisania',
 	'LBL_INCLUDE_SIGNATURE_INFO' => 'Podpis się w moje preferencje zostaną dołączone do dołu email',
 	'LBL_INCLUDE_SIGNATURE' => 'Dołącz podpis',
 
-
-      //common standard fields
-    'Created By' => 'Utworzony przez',
+    // module builder created module first block label
+    'LBL_BASIC_INFORMATION' => 'Podstawowe Informacje',
     'LBL_CLICK_HERE'=>'Kliknij tutaj',
+
+    //Recipient preferences labels
+    'LBL_SELCT_EMAIL_RECIPIENTS'   => 'Wybierz adresatów poczty e-mail',
+	'LBL_REMEMBER_MY_PREF'         => 'Zapamiętaj moje preferencje',
+	'LBL_RECIPIENT_PREFS'          => 'Preferencje Otrzymujące'    ,
+	'LBL_EMAIL_RECIPIENT_PREFS'    => 'Preferencje e-mail odbiorcy' ,
+	'LBL_ERROR_SAVING_PREF'        => 'Błąd w preferencjach oszczędzania. Proszę spróbować później!',
+	'LBL_NO_PREF_GIVEN'            => 'Brak preferencji podane!'    ,
+	'LBL_PLEASE_ADD_EMAIL_FIELDS'  => 'Proszę dodać pola e-mail i spróbuj ponownie',
+	'LBL_RECIPIENT_SAVE_MESSAGE'   => 'Preferencje Zapisz successful.These będą traktowane jako odbiorców adresy e-mail podczas wysyłania wiadomości e-mail z tego modułu.',
+    'LBL_PREF_RESET_MESSAGE' => 'Twój adres E-mail. - mail odbiorcy preferencji został usunięty!',
+
+
+  'LBL_COMPANY_DETAILS' => 'Dane Firmy',
+  'COMPANY_LOGO_HELP_TEXT' => 'Proszę przesłać swój piękny logo firmy. <br>oprócz wyświetlania logo Twojej firmy na swojej CRM,<br>ale
+nazwa firmy i adres części są używane w <br>w kampanii e-mail (koniecznie spotkać się piędź zasad<br>
+i w cudzysłowie.',
+  'COMPANY_LOGO_HELP_TEXT_2' => 'Możesz edytować informacje na temat firmy, później od <br>
+\'CRM w" Ustawienia " > "szablony" > "dane firmy\' s.',
+  'LBL_CHOOSE_PREFERENCES' => 'Wybierz Swoje preferencje',
+  'PREFERENCES_HELP_TEXT' => 'Waluta bazowa - wybrać walutę. Jeśli używasz kilku<br> W
+walut, wszystkie wartości są przeliczane na walutę bazową i przechowywać,<br>ale
+wykorzystując współczynnik przeliczania skonfigurowanego w programie CRM.',
+  'PREFERENCES_HELP_TEXT_2' => 'Osobiste preferencje mogą być dostosowane przez każdego Użytkownika w zespole.<br>
+Obejmują one Strefę czasową, Język, Format daty, Format liczby.<br>
+Format liczby linków są używane do walut i inne <br>
+liczba pól w CRM<br>
+Możesz zmienić Swoje preferencje później od \'Nazwa użytkownika > moje ustawienia \'',
+  'LBL_CANNOT_BE_CHANGED_LATER' => 'Nie może być później zmieniony',
+  'IMPORT_CONTACTS_GOOGLE_HELP_TEXT' => 'Możemy przynieść kontakty z Google i <br> możesz również włączyć Bi-kierunek synchronizacji, aby zapisać nasz znacznik<br>
+Free rosyjska kontaktów i kontaktów Google(do wybranej grupy zaktualizowany.<br>
+Kliknij przycisk autoryzuj i zobacz Kontakty z Google.',
+  'IMPORT_CONTACTS_CSV_HELP_TEXT' => 'Możesz zaimportować Kontakty z pliku CSV.',
+  'IMPORT_CONTACTS_CSV_HELP_TEXT2' => 'Importować możliwości, zainteresowania, bilety lotnicze, proszę spojrzeć na działania > Importuj " na którekolwiek z
+списковые prezentacji.',
+  'LBL_DOEST_FIRST_ROW_HEADER' => 'Czy pierwszy wiersz pliku zawiera nagłówki kolumn?',
+  'LBL_SELECT_CSV_FILE' => 'Wybierz plik CSV',
+  'LBL_START_IMPORTING' => 'Rozpocznij Import',
 
     // Social Module Strings
     'LBL_TWEETS' => 'Tweety',
@@ -759,7 +997,7 @@ $languageStrings = array(
     'LBL_ADD_EVENT_OR_TODO' => 'Dodaj zdarzenia / zadania',
     'LBL_ADD_TICKET_CONTACT' => 'Dodaj Ticket + Kontakt',
     'LBL_ADD_OPPORTUNITY_CONTACT' => 'Dodaj Opportunity + Kontakt',
-    'LBL_SOCIAL_TWITTER_WIDGET' => 'Aktywny Twitter',
+
     'LBL_TWITTER_HANDLER_DETAILS' => 'Twitter Handler Szczegóły',
     'LBL_PRIMARY_TWITTER' => 'Pierwotne Twitter',
     'LBL_ADD_TWITTER_HANDLER' => 'Dodaj Twitter Handler',
@@ -769,15 +1007,7 @@ $languageStrings = array(
     // Module field to store Source of Record
     'Source' => 'Źródło',
 
-    'LBL_SELCT_EMAIL_RECIPIENTS'   => 'Wybierz adresatów poczty e-mail',
-	'LBL_REMEMBER_MY_PREF'         => 'Zapamiętaj moje preferencje',
-	'LBL_RECIPIENT_PREFS'          => 'Preferencje Otrzymujące'    ,
-	'LBL_EMAIL_RECIPIENT_PREFS'    => 'Preferencje e-mail odbiorcy' ,
-	'LBL_ERROR_SAVING_PREF'        => 'Błąd w preferencjach oszczędzania. Proszę spróbować później!',
-	'LBL_NO_PREF_GIVEN'            => 'Brak preferencji podane!'    ,
-	'LBL_PLEASE_ADD_EMAIL_FIELDS'  => 'Proszę dodać pola e-mail i spróbuj ponownie',
-	'LBL_RECIPIENT_SAVE_MESSAGE'   => 'Preferencje Zapisz successful.These będą traktowane jako odbiorców adresy e-mail podczas wysyłania wiadomości e-mail z tego modułu.',
-    'LBL_DEFAULT_REPLY_TO' => 'Domyślnie dla wiadomości e-mail Odpowiedź do',
+ 'LBL_DEFAULT_REPLY_TO' => 'Domyślnie dla wiadomości e-mail Odpowiedź do',
     'outgoing_server_from_email' => 'Serwer poczty wychodzącej Od Email',
     'hepldesk_support_email' => 'Helpdesk Wsparcie Email-Id',
     'user_primary_email' => 'Użytkownik Główny email',
@@ -877,67 +1107,46 @@ $languageStrings = array(
 	'LBL_STARRED_RECORD_UPDATED' => '%s%s zaktualizowane',
   'LBL_EDIT_REASON' => 'Powód edycji',
   'LBL_SHOW_COMPLETE_DETAILS' => 'Pełne Informacje',
-  'LBL_CONTACT' => 'ZARZĄDZANIE KONTAKTAMI',
-  'LBL_NO_ATTACHMENTS' => 'Żadnych Inwestycji',
+
+
   'LBL_REARRANGE_DASHBOARD_TABS' => 'Organizowanie Karty',
   'LBL_DONE' => 'Wykonane',
   'LBL_DELETE_DASHBOARD_TAB' => 'Usuń Kartę',
   'LBL_DASHBOARD_TAB_ALREADY_EXIST' => 'Karta O Tej Nazwie Już Istnieje',
   'LBL_TABS_LIMIT_EXCEEDED' => 'Niestety! Nie mogę dodać więcej niż 10 kart',
   'LBL_TODOS' => 'Zadania',
-  'LBL_DOCUMENTATION' => 'Dokumentacja',
-  'LBL_VIDEO_TUTORIAL' => 'Poradnik',
-  'LBL_GUIDER' => 'Проводителя',
-  'LBL_VIDEOS' => 'Wideo',
-  'LBL_DISPLAY_TYPE' => 'Typ Wyświetlacza',
-  'LBL_DISPLAY_WIDETYPE' => 'Szeroki',
-  'LBL_DISPLAY_MEDIUMTYPE' => 'Średni',
-  'LBL_DISPLAY_NARROWTYPE' => 'Wąskie',
-  'LBL_TAG_THIS_RECORD' => 'Tag ten wpis',
-  'LBL_SAME_TAG_EXISTS' => 'Duplikat tag istnieje',
-  'LBL_MAKE_PUBLIC' => 'Manifestować',
-  'LBL_PAGE' => 'Strona',
+
+
   'LBL_LISTVIEW_PAGE_JUMP' => 'Strona Jezdzie',
   'LBL_PROFILE_PASSWORD' => 'Profil / Hasło',
-  'LBL_CANT_MOVE_FROM_PUBLIC_TO_PRIVATE' => 'Nie są w stanie poruszać się od wspólna tag dla prywatnego cechy.',
-  'LBL_EDIT_TAG' => 'Edytowanie Znacznika',
+
+
   'LBL_NO_TAG_EXISTS' => 'Brak Tagów Istnieje',
   'LBL_HISTORY' => 'Touchpoints',
   'LBL_SHOW_FULL_DETAILS' => 'Pokaż Pełną Informację',
-  'LBL_ACTIVITIES' => 'Działalność',
-  'LBL_NO_PENDING_ACTIVITIES' => 'Nie ma czasu działania',
-  'LBL_SUMMARY' => 'Cv',
-  'LBL_KEY_FIELD' => 'Pola Kluczowego',
-  'LBL_DETAILS' => 'Szczegóły',
-  'LBL_NAME_EMAIL' => 'Imię i email',
+
+
   'LBL_PLEASE_SELECT_MODULE' => 'Proszę wybrać dowolny moduł do wyszukiwania',
   'LBL_IS_REMOVED' => 'usunięty',
-  'LBL_REASON_FOR_CHANGING_COMMENT' => 'Podstaw do zmiany komentarza',
-  'Activities' => 'Działalność',
-  'Recycle Bin' => 'Kosz',
-  'LBL_ALL_RECORDS' => 'Wszystkie Wpisy',
-  'LBL_NO_RECORDS_FOUND' => 'Nie znaleziono wpisów',
-  'LBL_APPLBL_NONEROVE' => 'Zatwierdzić',
-  'LBL_ITEMS_TOTAL' => 'Elementy Ogólnej',
-  'LBL_PRE_TAX_TOTAL' => 'Do Opodatkowania Ogółem',
-  'LBL_SET_TAX_FOR' => 'Ustawić podatek dla',
-  'LBL_GROUP_TAX' => 'Grupa Podatkowych',
-  'Add Note' => 'Dodaj Dokument',
+
+
+	'LBL_NET_TOTAL' => 'Brutto', //???
+
+
+
+
+
+
+
+'LBL_NO_RECENT_UPDATES' => 'Brak aktualizacji',
   'LBL_form' => 'od',
   'LBL_to' => 'do',
   'LBL_DAY(S' => 'dzień(s',
   'LBL_HOUR(S' => 'godzina(y',
-  'SINGLE_Users' => 'Użytkownik',
-  'LBL_MINI_LIST' => 'Mini Lista',
-  'LBL_NOTEPAD' => 'Notatnik',
-  'LBL_NOTEPAD_NAME' => 'Notatnik Domeny',
-  'LBL_NOTEPAD_CONTENT' => 'Zawartość Notatnika',
-  'LBL_LAST_SAVED_ON' => 'Ostatni zapisany na',
-  'Mini List' => 'Mini Lista',
-  'Notebook' => 'Notatnik',
-  'LBL_RESULT_FOR_THE_TAG' => 'Wyniki dla tagu',
-  'LBL_MY' => 'Mój',
-  'LBL_IS_EMPTY' => 'pusty',
+
+
+
+
   'LBL_MODIFIED' => 'Zmienione',
   'Funnel Amount' => 'Całkowita sprzedaż etap',
   'LBL_TYPE_AND_SEARCH' => 'Rodzaju i wyszukiwanie',
@@ -946,133 +1155,33 @@ $languageStrings = array(
   'LBL_WORKFLOWS' => 'Procesy robocze',
   'LBL_PICKLIST' => 'Listy rozwijane',
   'LBL_BLANK' => '-Pusty-',
-  'LBL_Sun' => 'Słońce',
-  'LBL_Mon' => 'Pon.',
-  'LBL_Tue' => 'W',
-  'LBL_Wed' => 'Sr',
-  'LBL_Thu' => 'Czw',
-  'LBL_Fri' => 'Pt',
-  'LBL_Sat' => 'Coll',
-  'LBL_Jan' => 'Jan',
-  'LBL_Feb' => 'Luty',
-  'LBL_Mar' => 'Mar',
-  'LBL_Apr' => 'Kwi',
-  'LBL_May' => 'Może',
-  'LBL_Jun' => 'Cze',
-  'LBL_Jul' => 'Jul',
-  'LBL_Aug' => 'Sie',
-  'LBL_Sep' => 'Wrzesień',
-  'LBL_Oct' => 'Paź',
-  'LBL_Nov' => 'Noego',
-  'LBL_Dec' => 'Dec',
-  'LBL_CALENDAR_SETTINGS' => 'Ustawienia Kalendarza',
-  'Reminder Interval' => 'Pop-Up Przypomnienie Odstępu',
-  'HelpDesk' => 'Bilety lotnicze',
-  'LBL_TAG_CLOUD' => 'Chmura Tagów',
-  'LBL_NO_RECORDS' => 'Brak Wpisów',
-  'LBL_NO_RELATED' => 'Nie Związanych',
-  'LBL_GLOBAL_SEARCH_MAX_MESSAGE' => 'Tylko pierwsze 100 wyników wszystkich modułów przedstawiono poniżej. Dla modułu konkretne wyniki, Proszę wybrać odpowiedni moduł i wyszukiwanie',
-  'LBL_GLOBAL_SEARCH_MAX_MESSAGE_FOR_MODULE' => 'Tylko pierwsze 100 wyników przedstawiono poniżej. Uprzejmie zrobić wyszukiwanie Zaawansowane jeśli nie Jesteś zadowolony z wyniku',
-  'LBL_ACTION' => 'Akcja',
-  'LBL_NOTE' => 'Uwaga',
-  'LBL_SELECT_OPTION' => 'Wybierz opcję',
-  'LBL_TOOLTIP' => 'Zarządzanie Tooltip',
-  'LBL_MODULE_SEQUENCE_NUMBERING' => '%s numeracji',
-  'LBL_CUSTOM_FIELD_MAPPING' => 'Wyświetlanie Pól Niestandardowych',
-  'LBL_WEBFORMS' => 'Formularzy',
-  'SINGLE_Emails' => 'E-mail',
-  'Emails' => 'E-maile',
-  'LBL_SELECT_EMAIL_IDS' => 'Wybierz Adresy E-Mail',
-  'LBL_SUBJECT' => 'Temat',
-  'LBL_ATTACHMENT' => 'Załącznik',
-  'LBL_BROWSE_CRM' => 'Wyświetl w programie CRM',
-  'LBL_SEND' => 'Wysłać',
-  'LBL_SAVE_AS_DRAFT' => 'Zapisz jako wersję roboczą',
-  'LBL_GO_TO_PREVIEW' => 'Wejść w podgląd',
-  'LBL_SELECT_EMAIL_TEMPLATE' => 'Wybierz Szablon E-Mail',
-  'LBL_COMPOSE_EMAIL' => 'Napisz E-Mail',
-  'LBL_CC' => 'Sześcian.',
-  'LBL_BCC' => 'SC',
-  'LBL_ADD_CC' => 'Dodać Kostki.',
-  'LBL_ADD_BCC' => 'Dodaj BCC',
-  'LBL_MAX_UPLOAD_SIZE' => 'Maksymalny rozmiar przesyłanego pliku wynosi',
-  'LBL_EXCEEDED' => 'Przekroczył',
-  'LBL_OPERATION_NOT_PERMITTED' => 'Operacja nie jest dozwolona',
-  'LBL_MERGE' => 'Korespondencji seryjnej',
-  'LBL_MERGING_CRITERIA_SELECTION' => 'Łączenie Kryteriów Wyboru',
-  'LBL_AVAILABLE_FIELDS' => 'Dostępne Pola',
-  'LBL_MERGE_RECORDS_DESCRIPTION' => 'Podstawowy wpis zostanie zapisany po fuzji. Możesz wybrać kolumny, aby zapisać wartości.
-Pozostałe wpisy zostaną usunięte, a odpowiednia informacja zostanie złączone.',
-  'LBL_MERGE_RECORDS_IN' => 'Scalanie Wpisów W',
-  'LBL_FIELDS' => 'Pola',
-  'LBL_RECORD' => 'Wpis',
-  'LBL_NO_DUPLICATED_FOUND' => 'Nie znalazłeś duplikaty',
-  'LBL_MERGE_SELECT' => 'Połączyć Wybrać',
-  'LBL_BACK_TO_PRODUCTS' => 'Z powrotem produkty',
-  'Valid Date' => 'Faktyczna Data',
-  'Phone: ' => 'Telefon: ',
-  'Issued Date' => 'Wydane Data',
-  'Shipping & Handling Charges' => 'Wysyłka & Opłat Manipulacyjnych',
-  'Shipping & Handling Tax:' => 'Koszty Wysyłki I Obsługi Podatkowej:',
-  'Discount' => 'Rabat',
-  'Net Total' => 'Ogółem',
-  'Product Code' => 'Kod Produktu',
-  'Customer Name' => 'Nazwa Klienta',
-  'Price' => 'Cena',
-  'Tax:' => 'Podatek:',
-  'Grand Total:' => 'Ogółem:',
-  'Fax: ' => 'Faks: ',
-  'Website: ' => 'Strona www: ',
-  'Tax' => 'Podatek',
-  'LBL_ALPHABETS' => 'A,B,C,D,E,F,G,H,I,K,K,L,M,N,O,P,P,P,Z,T,U,V, W,X,Y,Z',
-  'Service Contracts' => 'Kontrakty Serwisowe',
-  'Projects' => 'Projekty',
-  'Sales Order' => 'Zamówienia Na Sprzedaż',
-  'Purchase Order' => 'Zamówienia Na Zakup',
-  'Payments' => 'Płatności',
-  'List and Campaigns' => 'Lista i kampanii',
-  'Project Tasks' => 'Zadania Projektu',
-  'Project Milestones' => 'Kamienie Milowe Projektu',
-  'Labels Editor' => 'Tagi Edytor',
-  'LBL_IGNORE_EMPTY_VALUES' => 'Ignoruj puste wartości',
-  'Product Bundles' => 'Pakiety Produktów.',
-  'Parent Product' => 'Rodzic Produkt',
-  'LBL_MANAGE_USERS' => 'Zarządzanie Użytkownikami',
-  'LBL_SELECT_RELATED_MODULES' => 'Wybierz Związanych Z Nimi Modułów',
-  'LBL_ASSIGNED_TO' => 'Zaplanowane',
-  'LBL_LEFT_PANEL_SHOW_HIDE' => 'Lewy Panel Pokaż/Ukryj',
-  'LBL_PASSWORD_LINK_EXPIRED_OR_INVALID_PASSWORD' => 'Hasło linki wygasły lub zostały wprowadzone nieprawidłowe hasło',
-  'SMSNotifier' => 'Powiadamiania SMS',
+
+
+
+
+
+	//PrintTemplate Links
+    'Print' => 'Drukuj / Eksportuj do PDF',
+    'Print Templates' => 'Szablony Wydrukować',
+
+
+
+    // Convert Lead and Potential
+    'LBL_CONVERT_ERROR_TITLE' => 'Moduły wyłączone',
+	'CANNOT_CONVERT' => 'Nie można przekonwertować',
+	'LBL_FOLLOWING_ARE_POSSIBLE_REASONS' => 'Poniżej może znajdować się jeden z możliwych powodów:',
+    'LBL_MANDATORY_FIELDS_ARE_EMPTY' => 'Niektóre wartość z obowiązkowych pól są puste',
+'Single_Users' => 'Użytkownik',
+
+	'LBL_TODAY' => 'dzisiaj',
+	'LBL_TOMORROW' => 'jutro',
+	'LBL_YESTERDAY' => 'wczoraj',
+
+
   'LBL_NO_MORE_RESULTS' => 'Więcej żadnych wyników!',
   'LBL_CLICK_TO_EDIT' => 'Kliknij przycisk Edytuj',
   'LBL_SIGNATURE_BLOCK' => 'Podpis',
-  'LBL_BASIC_INFORMATION' => 'Podstawowe Informacje',
-  'LBL_PREF_RESET_MESSAGE' => 'Twój adres E-mail. - mail odbiorcy preferencji został usunięty!',
-  'LBL_COMPANY_DETAILS' => 'Dane Firmy',
-  'COMPANY_LOGO_HELP_TEXT' => 'Proszę przesłać swój piękny logo firmy. <br>oprócz wyświetlania logo Twojej firmy na swojej CRM,<br>ale
-nazwa firmy i adres części są używane w <br>w kampanii e-mail (koniecznie spotkać się piędź zasad<br>
-i w cudzysłowie.',
-  'COMPANY_LOGO_HELP_TEXT_2' => 'Możesz edytować informacje na temat firmy, później od <br>
-\'CRM w" Ustawienia " > "szablony" > "dane firmy\' s.',
-  'LBL_CHOOSE_PREFERENCES' => 'Wybierz Swoje preferencje',
-  'PREFERENCES_HELP_TEXT' => 'Waluta bazowa - wybrać walutę. Jeśli używasz kilku<br> W
-walut, wszystkie wartości są przeliczane na walutę bazową i przechowywać,<br>ale
-wykorzystując współczynnik przeliczania skonfigurowanego w programie CRM.',
-  'PREFERENCES_HELP_TEXT_2' => 'Osobiste preferencje mogą być dostosowane przez każdego Użytkownika w zespole.<br>
-Obejmują one Strefę czasową, Język, Format daty, Format liczby.<br>
-Format liczby linków są używane do walut i inne <br>
-liczba pól w CRM<br>
-Możesz zmienić Swoje preferencje później od \'Nazwa użytkownika > moje ustawienia \'',
-  'LBL_CANNOT_BE_CHANGED_LATER' => 'Nie może być później zmieniony',
-  'IMPORT_CONTACTS_GOOGLE_HELP_TEXT' => 'Możemy przynieść kontakty z Google i <br> możesz również włączyć Bi-kierunek synchronizacji, aby zapisać nasz znacznik<br>
-Free rosyjska kontaktów i kontaktów Google(do wybranej grupy zaktualizowany.<br>
-Kliknij przycisk autoryzuj i zobacz Kontakty z Google.',
-  'IMPORT_CONTACTS_CSV_HELP_TEXT' => 'Możesz zaimportować Kontakty z pliku CSV.',
-  'IMPORT_CONTACTS_CSV_HELP_TEXT2' => 'Importować możliwości, zainteresowania, bilety lotnicze, proszę spojrzeć na działania > Importuj " na którekolwiek z
-списковые prezentacji.',
-  'LBL_DOEST_FIRST_ROW_HEADER' => 'Czy pierwszy wiersz pliku zawiera nagłówki kolumn?',
-  'LBL_SELECT_CSV_FILE' => 'Wybierz plik CSV',
-  'LBL_START_IMPORTING' => 'Rozpocznij Import',
+
   'LBL_PRIMARY' => 'Podstawowy',
   'LBL_GOOGLE_SYNC_INTIATED_MSG' => 'Import zaplanowany, Twoje kontakty zostaną zaimportowane w najbliższym czasie.<br> jak przejść do następnego kroku, nie ma wpływu na import.',
   'LBL_IMPORT_SYNC_INTIATED_MSG' => 'Import był w toku. Otrzymasz e-mailem po zakończeniu importu.<br> jak przejść do następnego kroku, nie ma wpływu na import.',
@@ -1203,6 +1312,7 @@ na zewnątrz free rosyjska.',
   'LBL_CHART_VIEW' => 'Widok Wykresu',
 
 
+
   'LBL_DAY(S)' => 'dzień(s)',
   'LBL_HOUR(S)' => 'godzina(y)',
   'LBL_SLA_INFORMATION' => 'CCA informacje',
@@ -1218,6 +1328,7 @@ na zewnątrz free rosyjska.',
 	'LBL_DUPLICATION_FAILURE_FOR_ADMIN' => 'Można%s modyfikować duplikaty zasady profilaktyki.',
 	'LBL_DUPLICATION_FAILURE_FOR_NON_ADMIN' => 'Skontaktuj się z administratorem w celu rewizji zasad duplikaty',
 	'LBL_DUPLICATE_RECORD_LISTS' => 'Duplikat%s (s):',
+        'Print Templates' => 'Wydrukuj szablon',
 );
 $jsLanguageStrings = array(
 	'JS_EMAIL_SERVER_CONFIGURATION' => 'Należy skonfigurować ustawienia serwera poczty wychodzącej - SMTP',
