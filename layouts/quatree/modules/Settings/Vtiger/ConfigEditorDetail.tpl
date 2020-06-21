@@ -25,7 +25,7 @@
                 <div class="detailViewInfo">
                     {assign var=FIELD_DATA value=$MODEL->getViewableData()}
                     {foreach key=FIELD_NAME item=FIELD_DETAILS from=$MODEL->getEditableFields()}
-                        <div class="row form-group"><div class="col-lg-4 col-md-4 col-sm-4 fieldLabel"><label>{if $FIELD_NAME == 'upload_maxsize'}{if $FIELD_DATA[$FIELD_NAME] gt 5}{vtranslate($FIELD_DETAILS['label'], $QUALIFIED_MODULE,$FIELD_DATA[$FIELD_NAME])}{else}{vtranslate($FIELD_DETAILS['label'], $QUALIFIED_MODULE,5)}{/if}{else}{vtranslate($FIELD_DETAILS['label'], $QUALIFIED_MODULE)}{/if}</label></div>
+                        <div class="row form-group"><div class="col-lg-4 col-md-4 col-sm-4 fieldLabel"><label>{if $FIELD_NAME == 'upload_maxsize'}{if $FIELD_DATA[$FIELD_NAME] gt 50}{vtranslate($FIELD_DETAILS['label'], $QUALIFIED_MODULE,$FIELD_DATA[$FIELD_NAME])}{else}{vtranslate($FIELD_DETAILS['label'], $QUALIFIED_MODULE,5)}{/if}{else}{vtranslate($FIELD_DETAILS['label'], $QUALIFIED_MODULE)}{/if}</label></div>
                             <div  class="col-lg-8 col-md-8 col-sm-8 fieldValue break-word">
                                 <div>
                                     {if $FIELD_NAME == 'default_module'}
