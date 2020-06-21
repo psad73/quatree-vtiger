@@ -28,3 +28,5 @@
 /.php_cs.cache
 
 /nbproject
+/dev
+/vtigercron-test-MailScanner.php
