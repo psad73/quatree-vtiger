@@ -31,4 +31,6 @@
 /nbproject
 /dev
 /node_modules
+/gulpfile.js
+/package-lock.json
 /vtigercron-test-MailScanner.php
