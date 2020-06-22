@@ -22,6 +22,7 @@
 /vtigercron-debug.php
 /vtigercron-test.php
 /build.xml
+/build.properties
 /composer.json
 /composer.lock
 /index.php
@@ -29,4 +30,5 @@
 
 /nbproject
 /dev
+/node_modules
 /vtigercron-test-MailScanner.php
