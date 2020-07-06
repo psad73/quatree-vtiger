@@ -84,7 +84,7 @@ class Reports_ExportReport_View extends Vtiger_View_Controller {
 
 		$viewer->view('PrintReport.tpl', $moduleName);
 	}
-    
+
     function checkReportModulePermission(Vtiger_Request $request){
         $viewer = $this->getViewer($request);
         $recordId = $request->get('record');
@@ -101,6 +101,9 @@ class Reports_ExportReport_View extends Vtiger_View_Controller {
 		$currentUser = Users_Record_Model::getCurrentUserModel();
 		$userPrivilegesModel = Users_Privileges_Model::getInstanceById($currentUser->getId());
         foreach ($modulesList as $checkModule) {
+            if($checkModule == ''){
+                    continue;
+            }
             $moduleInstance = Vtiger_Module_Model::getInstance($checkModule);
             $permission = $userPrivilegesModel->hasModulePermission($moduleInstance->getId());
             if(!$permission) {
