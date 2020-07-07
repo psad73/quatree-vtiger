@@ -82,7 +82,7 @@ class Reports_ExportReport_View extends Vtiger_View_Controller {
 		$viewer->assign('MODULE', $moduleName);
 		$viewer->assign('ROW', $printData['data'][1]);
 
-		$viewer->view('PrintReport.tpl', $moduleName);
+		$viewer->view('PrintReportCustom01.tpl', $moduleName);
 	}
 
     function checkReportModulePermission(Vtiger_Request $request){
