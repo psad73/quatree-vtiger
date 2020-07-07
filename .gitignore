@@ -3,6 +3,7 @@
 #
 /config.inc.php
 /config.performance.php
+/config.csrf-secret.php
 /cron/output.txt
 /logs/*
 !/logs/.htaccess
