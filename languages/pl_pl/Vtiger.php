@@ -1051,7 +1051,7 @@ Kliknij przycisk autoryzuj i zobacz Kontakty z Google.',
 
 
 	'Engagement Score'             => 'Zaangażowanie wynik'        ,
-	'Click Count'                  => 'Kliknij hrabia'              ,
+	'Click Count'                  => 'Ilość kliknięć'              ,
 	// Extensions
     'LBL_SYNC_LOG' => 'Synchronizacja Zaloguj',
 	'LBL_SYNC_SETTINGS' => 'Ustawienia synchronizacji',

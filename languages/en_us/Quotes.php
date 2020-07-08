@@ -28,7 +28,7 @@ $languageStrings = array(
 	'Inventory Manager'=>'Inventory Manager',
 	'Related To' => 'Related To',
 	//Added for existing Picklist Entries
-
+    'QUOTE_APPROVED' => 'Accepted by',
 	'Accepted'=>'Accepted',
 	'Rejected'=>'Rejected',
 

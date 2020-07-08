@@ -20,7 +20,7 @@ $languageStrings = array(
 
 	// Blocks
 	'LBL_QUOTE_INFORMATION' => 'Cytat deatils',
-	
+
 	//Field Labels
 	'Quote No'=>'Numer oferty',
 	'Quote Stage'=>'Status oferty',
@@ -28,7 +28,7 @@ $languageStrings = array(
 	'Inventory Manager'=>'Kierownik Magazynu',
     'Related To' => 'Związane z',
 	//Added for existing Picklist Entries
-
+    'QUOTE_APPROVED' => 'Zaakceptował',
 	'Accepted'=>'Zaakceptowana',
 	'Rejected'=>'Odrzucona',
 
