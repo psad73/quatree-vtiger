@@ -75,7 +75,7 @@ $languageStrings = array(
     'LBL_MAX' => 'Najwyższa wartość',
     'LBL_MIN' => 'Najniższa wartość',
     'LBL_FIELD_NAMES' => 'Nazwy pól',
-    'LBL_REPORT_CSV' => 'Eksportuj do pliku CSV',
+    'LBL_REPORT_CSV' => 'Eksportuj do CSV',
     'LBL_VIEW_DETAILS' => 'Wyświetl szczegóły',
     //List View Headers
     'Report Name' => 'Nazwa raportu',
@@ -209,7 +209,7 @@ $languageStrings = array(
     'SINGLE_Reports' => 'Raport',
     'LBL_SAME_LEVEL_ROLES' => 'Samym Poziomie Ról',
     'LBL_SUBORDINATE_ROLES' => 'Podwładni Roli',
-    'LBL_GENERATE_NOW' => 'Teraz utworzyć',
+    'LBL_GENERATE_NOW' => 'Aktualizuj',
     'LBL_LIMIT_EXCEEDED' => 'Tylko 1000 + wpisy są wyświetlane. Korzystanie z pliku CSV lub Excel eksport, aby zobaczyć wszystkie wpisy',
     'LBL_TOP' => 'Top',
     'LBL_ALL_REPORTS' => 'Wszystkie Raporty',
