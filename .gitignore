@@ -27,7 +27,6 @@
 /build.properties
 /composer.json
 /composer.lock
-/index.php
 /.php_cs.cache
 
 /nbproject
