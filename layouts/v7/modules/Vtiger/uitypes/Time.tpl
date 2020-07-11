@@ -24,6 +24,11 @@
 		{/if} data-rule-time="true"/>
 		<span class="input-group-addon" style="width: 30px;">
 			<i class="fa fa-clock-o"></i>
-		</span>
+		</span>                
 	</div>
+        <div class="input-addon">
+            <span class="input-group-addon clickable q-button sqg-button" style="width: 30px;" data-role="settime" data-target-id="{$MODULE}_editView_fieldName_{$FIELD_NAME}" onClick="setTimeNow(this);" title="Teraz">
+                <i class="fa fa-step-forward"></i>
+            </span>
+        </div>
 {/strip}
