@@ -1,29 +1,26 @@
 <?php
-
-/* * *******************************************************************************
- * * The contents of this file are subject to the vtiger CRM Public License Version 1.0
+/*********************************************************************************
+ ** The contents of this file are subject to the vtiger CRM Public License Version 1.0
  * ("License"); You may not use this file except in compliance with the License
  * The Original Code is:  vtiger CRM Open Source
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
  *
- * ****************************************************************************** */
+ ********************************************************************************/
 
 require_once('modules/Settings/MailConverter/handlers/MailScannerAction.php');
 
 /**
  * Scanner Rule
  */
-class Vtiger_MailScannerRule
-{
-
+class Vtiger_MailScannerRule {
     // id of this instance
-    var $ruleid = false;
+	var $ruleid    = false;
     // scanner to which this rule is linked
     var $scannerid = false;
     // from address criteria
-    var $fromaddress = false;
+	var $fromaddress= false;
     // to address criteria
     var $toaddress = false;
     // cc address criteria
@@ -33,32 +30,29 @@ class Vtiger_MailScannerRule
     // subject criteria operator
     var $subjectop = false;
     // subject criteria
-    var $subject = false;
+	var $subject   = false;
     // body criteria operator
-    var $bodyop = false;
+	var $bodyop    = false;
     // body criteria
-    var $body = false;
+	var $body      = false;
     // order of this rule
-    var $sequence = false;
+	var $sequence  = false;
     // is this action valid
-    var $isvalid = false;
+	var $isvalid   = false;
     // match criteria ALL or ANY
     var $matchusing = false;
     // assigned to user id
     var $assigned_to = false;
     // associated actions for this rule
-    var $actions = false;
+	var $actions  = false;
     // TODO we are restricting one action for one rule right now
-    var $useaction = false;
+	var $useaction= false;
 
-    /** DEBUG functionality * */
-    var $debug = true;
-
-    private $_debug = true;
-
-    function log($message)
-    {
-        global $log;
+	/** DEBUG functionality **/
+	var $debug = true;
+    	private $_debug = true;
+    function log($message) {
+	global $log;
         if ($log && ($this->debug || $this->_debug)) {
             $log->debug($message);
         } else if ($this->debug)
@@ -68,16 +62,14 @@ class Vtiger_MailScannerRule
     /**
      * Constructor
      */
-    function __construct($forruleid)
-    {
+    function __construct($forruleid) {
         $this->initialize($forruleid);
     }
 
     /**
      * String representation of this instance
      */
-    function __toString()
-    {
+    function __toString() {
         $tostring = '';
         $tostring .= "FROM $this->fromaddress, TO $this->toaddress, CC $this->cc, BCC $this->bcc";
         $tostring .= ",SUBJECT $this->subjectop $this->subject, BODY $this->bodyop $this->body, MATCH USING, $this->matchusing";
@@ -87,8 +79,7 @@ class Vtiger_MailScannerRule
     /**
      * Initialize this instance
      */
-    function initialize($forruleid)
-    {
+    function initialize($forruleid) {
         global $adb;
         $result = $adb->pquery("SELECT * FROM vtiger_mailscanner_rules WHERE ruleid=? ORDER BY sequence", Array($forruleid));
 
@@ -109,28 +100,26 @@ class Vtiger_MailScannerRule
             $this->isvalid = true;
             $this->initializeActions();
             // At present we support only one action for a rule
-            if (!empty($this->actions))
-                $this->useaction = $this->actions[0];
+                if(!empty($this->actions)) $this->useaction = $this->actions[0];
         }
     }
 
     /**
      * Initialize the actions
      */
-    function initializeActions()
-    {
+    function initializeActions() {
         global $adb;
-        if ($this->ruleid) {
+            if($this->ruleid) {
             $this->actions = Array();
-            $actionres = $adb->pquery("SELECT actionid FROM vtiger_mailscanner_ruleactions WHERE ruleid=?", Array($this->ruleid));
+                $actionres = $adb->pquery("SELECT actionid FROM vtiger_mailscanner_ruleactions WHERE ruleid=?",Array($this->ruleid));
             $actioncount = $adb->num_rows($actionres);
-            if ($actioncount) {
-                for ($index = 0; $index < $actioncount; ++$index) {
-                    $actionid = $adb->query_result($actionres, $index, 'actionid');
-                    $ruleaction = new Vtiger_MailScannerAction($actionid);
-                    $ruleaction->debug = $this->debug;
-                    $this->actions[] = $ruleaction;
-                }
+                if($actioncount) {
+                    for($index = 0; $index < $actioncount; ++$index) {
+                $actionid = $adb->query_result($actionres, $index, 'actionid');
+                $ruleaction = new Vtiger_MailScannerAction($actionid);
+                $ruleaction->debug = $this->debug;
+                $this->actions[] = $ruleaction;
+            }
             }
         }
     }
@@ -138,16 +127,14 @@ class Vtiger_MailScannerRule
     /**
      * Is body rule defined?
      */
-    function hasBodyRule()
-    {
+    function hasBodyRule() {
         return (!empty($this->bodyop));
     }
 
     /**
      * Check if the rule criteria is matching
      */
-    function isMatching($matchfound1, $matchfound2 = null)
-    {
+	function isMatching($matchfound1, $matchfound2 = null) {
         if ($matchfound2 === null)
             return $matchfound1;
 
@@ -164,8 +151,7 @@ class Vtiger_MailScannerRule
      * @param $includingBody
      * @returns false if not match is found or else all matching result found
      */
-    function applyAll($mailrecord, $includingBody = true)
-    {
+    function applyAll($mailrecord, $includingBody=true) {
         $matchresults = Array();
         $matchfound = null;
 
@@ -174,33 +160,31 @@ class Vtiger_MailScannerRule
             $subrules = Array('FROM', 'TO', 'CC', 'BCC', 'SUBJECT', 'BODY');
 
             foreach ($subrules as $subrule) {
-                // Body rule could be defered later to improve performance
-                // in that case skip it.
-                if ($subrule == 'BODY' && !$includingBody)
-                    continue;
+            // Body rule could be defered later to improve performance
+            // in that case skip it.
+                    if($subrule == 'BODY' && !$includingBody) continue;
 
-                $checkmatch = $this->apply($subrule, $mailrecord);
-                $matchfound = $this->isMatching($checkmatch, $matchfound);
-                // Collect matching result array
-                if ($matchfound && is_array($checkmatch))
-                    $matchresults[] = $checkmatch;
+            $checkmatch = $this->apply($subrule, $mailrecord);
+            $matchfound = $this->isMatching($checkmatch, $matchfound);
+            // Collect matching result array
+            if ($matchfound && is_array($checkmatch))
+                $matchresults[] = $checkmatch;
             }
         } else {
             $this->log("MailScannerRule: No conditions for this email found");
             $matchfound = false;
-            if ($this->matchusing == 'OR') {
-                $matchfound = true;
-                $matchresults[] = $this->__CreateMatchResult('BLANK', '', '', '');
+                if($this->matchusing == 'OR') {
+            $matchfound = true;
+                    $matchresults[] = $this->__CreateMatchResult('BLANK','','','');
             }
         }
-        return ($matchfound) ? $matchresults : false;
+		return ($matchfound)? $matchresults : false;
     }
 
     /**
      * Check if at least one condition is set for this rule.
      */
-    function hasACondition()
-    {
+    function hasACondition() {
         $hasFromAddress = $this->fromaddress ? true : false;
         $hasToAddress = $this->toaddress ? true : false;
         $hasCcAddress = $this->cc ? true : false;
@@ -213,68 +197,66 @@ class Vtiger_MailScannerRule
     /**
      * Apply required condition on the mail record.
      */
-    function apply($subrule, $mailrecord)
-    {
+    function apply($subrule, $mailrecord) {
         $matchfound = false;
-        if ($this->isvalid) {
+            if($this->isvalid) {
             $this->log('MailScannerRule: Trying rule: ' . strtoupper($subrule));
-            switch (strtoupper($subrule)) {
-                case 'FROM':
-                    if ($this->fromaddress) {
-                        if (strpos($this->fromaddress, '*') == 0)
-                            $this->fromaddress = trim($this->fromaddress, '*');
-                        $matchfound = $this->find($subrule, 'Contains', $mailrecord->_from[0], $this->fromaddress);
-                    } else {
-                        $matchfound = $this->__CreateDefaultMatchResult($subrule);
-                    }
+                switch(strtoupper($subrule)) {
+            case 'FROM':
+                if($this->fromaddress) {
+                    if(strpos($this->fromaddress, '*') == 0)
+                        $this->fromaddress = trim($this->fromaddress, '*');
+                    $matchfound = $this->find($subrule, 'Contains', $mailrecord->_from[0], $this->fromaddress);
+                } else {
+                    $matchfound = $this->__CreateDefaultMatchResult($subrule);
+                }
+                break;
+            case 'TO':
+                        if($this->toaddress) {
+                            foreach($mailrecord->_to as $toemail) {
+                    $matchfound = $this->find($subrule, 'Contains', $toemail, $this->toaddress);
+                                if($matchfound) break;
+                }
+                } else {
+                $matchfound = $this->__CreateDefaultMatchResult($subrule);
+                }
+                break;
+            case 'CC':
+                if ($this->cc) {
+                foreach ($mailrecord->_cc as $toemail) {
+                    $matchfound = $this->find($subrule, 'Contains', $toemail, $this->cc);
+                    if ($matchfound)
                     break;
-                case 'TO':
-                    if ($this->toaddress) {
-                        foreach ($mailrecord->_to as $toemail) {
-                            $matchfound = $this->find($subrule, 'Contains', $toemail, $this->toaddress);
-                            if ($matchfound)
-                                break;
-                        }
-                    } else {
-                        $matchfound = $this->__CreateDefaultMatchResult($subrule);
-                    }
+                }
+                } else {
+                $matchfound = $this->__CreateDefaultMatchResult($subrule);
+                }
+                break;
+            case 'BCC':
+                if ($this->bcc) {
+                foreach ($mailrecord->_bcc as $toemail) {
+                    $matchfound = $this->find($subrule, 'Contains', $toemail, $this->bcc);
+                    if ($matchfound)
                     break;
-                case 'CC':
-                    if ($this->cc) {
-                        foreach ($mailrecord->_cc as $toemail) {
-                            $matchfound = $this->find($subrule, 'Contains', $toemail, $this->cc);
-                            if ($matchfound)
-                                break;
-                        }
-                    } else {
-                        $matchfound = $this->__CreateDefaultMatchResult($subrule);
-                    }
-                    break;
-                case 'BCC':
-                    if ($this->bcc) {
-                        foreach ($mailrecord->_bcc as $toemail) {
-                            $matchfound = $this->find($subrule, 'Contains', $toemail, $this->bcc);
-                            if ($matchfound)
-                                break;
-                        }
-                    } else {
-                        $matchfound = $this->__CreateDefaultMatchResult($subrule);
-                    }
-                    break;
-                case 'SUBJECT':
-                    if ($this->subjectop) {
-                        $matchfound = $this->find($subrule, $this->subjectop, $mailrecord->_subject, $this->subject);
-                    } else {
-                        $matchfound = $this->__CreateDefaultMatchResult($subrule);
-                    }
-                    break;
-                case 'BODY':
-                    if ($this->bodyop) {
-                        $matchfound = $this->find($subrule, $this->bodyop, trim(strip_tags($mailrecord->_body)), trim($this->body));
-                    } else {
-                        $matchfound = $this->__CreateDefaultMatchResult($subrule);
-                    }
-                    break;
+                }
+                } else {
+                $matchfound = $this->__CreateDefaultMatchResult($subrule);
+                }
+                break;
+            case 'SUBJECT':
+                if ($this->subjectop) {
+                    $matchfound = $this->find($subrule, $this->subjectop, $mailrecord->_subject, $this->subject);
+                } else {
+                    $matchfound = $this->__CreateDefaultMatchResult($subrule);
+                }
+                break;
+            case 'BODY':
+                if ($this->bodyop) {
+                $matchfound = $this->find($subrule, $this->bodyop, trim(strip_tags($mailrecord->_body)), trim($this->body));
+                } else {
+                $matchfound = $this->__CreateDefaultMatchResult($subrule);
+                }
+                break;
             }
         }
         return $matchfound;
@@ -283,12 +265,11 @@ class Vtiger_MailScannerRule
     /**
      * Find if the rule matches based on condition and parameters
      */
-    function find($subrule, $condition, $input, $searchfor)
-    {
+    function find($subrule, $condition, $input, $searchfor) {
         if (!$input)
             return false;
-        $input = trim(preg_replace("/\r/", '', decode_html($input)));
-        $searchfor = decode_html($searchfor);
+            $input = trim(preg_replace("/\r/", '', decode_html($input))); 
+            $searchfor = decode_html($searchfor);
         $matchfound = false;
         $matches = false;
         if (preg_match("/^regex[p]?\(.*\)$/i", $searchfor)) {
@@ -297,57 +278,57 @@ class Vtiger_MailScannerRule
         }
         switch ($condition) {
             case 'Contains':
-                $matchfound = stripos($input, $searchfor);
-                $matchfound = ($matchfound !== FALSE);
-                $matches = $searchfor;
-                break;
+            $matchfound = stripos($input, $searchfor);
+            $matchfound = ($matchfound !== FALSE);
+            $matches = $searchfor;
+            break;
             case 'Not Contains':
-                $matchfound = stripos($input, $searchfor);
-                $matchfound = ($matchfound === FALSE);
-                $matches = $searchfor;
-                break;
+            $matchfound = stripos($input, $searchfor);
+            $matchfound = ($matchfound === FALSE);
+            $matches = $searchfor;
+            break;
             case 'Equals':
-                $matchfound = strcasecmp($input, $searchfor);
-                $matchfound = ($matchfound === 0);
-                $matches = $searchfor;
-                break;
+            $matchfound = strcasecmp($input, $searchfor);
+            $matchfound = ($matchfound === 0);
+            $matches = $searchfor;
+            break;
             case 'Not Equals':
-                $matchfound = strcasecmp($input, $searchfor);
-                $matchfound = ($matchfound !== 0);
-                $matches = $searchfor;
-                break;
+            $matchfound = strcasecmp($input, $searchfor);
+            $matchfound = ($matchfound !== 0);
+            $matches = $searchfor;
+            break;
             case 'Begins With':
-                $matchfound = stripos($input, $searchfor);
-                $matchfound = ($matchfound === 0);
-                $matches = $searchfor;
-                break;
+            $matchfound = stripos($input, $searchfor);
+            $matchfound = ($matchfound === 0);
+            $matches = $searchfor;
+            break;
             case 'Ends With':
-                $matchfound = strripos($input, $searchfor);
-                $matchfound = ($matchfound === strlen($input) - strlen($searchfor));
-                $matches = $searchfor;
-                break;
+            $matchfound = strripos($input, $searchfor);
+            $matchfound = ($matchfound === strlen($input) - strlen($searchfor));
+            $matches = $searchfor;
+            break;
             case 'Regex':
-                $regmatches = Array();
-                $matchfound = false;
-                $searchfor = str_replace('/', '\/', $searchfor);
-                $input = str_replace("_", " ", $input);
-                if (preg_match("/$searchfor/i", $input, $regmatches)) {
-                    // Pick the last matching group
-                    $matches = $regmatches[count($regmatches) - 1];
-                    $matchfound = true;
-                }
-                break;
+            $regmatches = Array();
+            $matchfound = false;
+            $searchfor = str_replace('/', '\/', $searchfor);
+                    $input = str_replace("_", " ", $input);
+            if (preg_match("/$searchfor/i", $input, $regmatches)) {
+                // Pick the last matching group
+                $matches = $regmatches[count($regmatches) - 1];
+                $matchfound = true;
+            }
+            break;
             case 'Has Ticket Number':
-                $regmatches = Array();
-                $matchfound = false;
-                $searchfor = "Ticket Id[^:]?: ([0-9]+)";
-                $searchfor = str_replace('/', '\/', $searchfor);
-                if (preg_match("/$searchfor/i", $input, $regmatches)) {
-                    // Pick the last matching group
-                    $matches = $regmatches[count($regmatches) - 1];
-                    $matchfound = true;
-                }
-                break;
+            $regmatches = Array();
+            $matchfound = false;
+            $searchfor = "Ticket Id[^:]?: ([0-9]+)"; 
+            $searchfor = str_replace('/', '\/', $searchfor);
+            if (preg_match("/$searchfor/i", $input, $regmatches)) {
+                // Pick the last matching group
+                $matches = $regmatches[count($regmatches) - 1];
+                $matchfound = true;
+            }
+            break;
         }
 
 
@@ -364,20 +345,16 @@ class Vtiger_MailScannerRule
     /**
      * Create matching result for the subrule.
      */
-    function __CreateMatchResult($subrule, $condition, $searchfor, $matches)
-    {
-        return Array('subrule' => $subrule, 'condition' => $condition, 'searchfor' => $searchfor, 'matches' => $matches);
+    function __CreateMatchResult($subrule, $condition, $searchfor, $matches) {
+		return Array( 'subrule' => $subrule, 'condition' => $condition, 'searchfor' => $searchfor, 'matches' => $matches);
     }
 
     /**
      * Create default success matching result
      */
-    function __CreateDefaultMatchResult($subrule)
-    {
-        if ($this->matchusing == 'OR')
-            return false;
-        if ($this->matchusing == 'AND')
-            return $this->__CreateMatchResult($subrule, 'Contains', '', '');
+    function __CreateDefaultMatchResult($subrule) {
+		if($this->matchusing == 'OR') return false;
+		if($this->matchusing == 'AND') return $this->__CreateMatchResult($subrule, 'Contains', '', '');
     }
 
     /**
@@ -385,13 +362,12 @@ class Vtiger_MailScannerRule
      * @param $matchresult result of apply obtained earlier
      * @returns matchinfo if Regex match is found, false otherwise
      */
-    function hasRegexMatch($matchresult)
-    {
-        foreach ($matchresult as $matchinfo) {
+    function hasRegexMatch($matchresult) {
+		foreach($matchresult as $matchinfo) {
             $match_condition = $matchinfo['condition'];
             $match_string = $matchinfo['matches'];
-            if (($match_condition == 'Regex' || $match_condition == 'Has Ticket Number') && $match_string)
-                return $matchinfo;
+                if(($match_condition == 'Regex' || $match_condition == 'Has Ticket Number') && $match_string) 
+            return $matchinfo;
         }
         return false;
     }
@@ -399,13 +375,12 @@ class Vtiger_MailScannerRule
     /**
      * Swap (reset) sequence of two rules.
      */
-    static function resetSequence($ruleid1, $ruleid2)
-    {
+    static function resetSequence($ruleid1, $ruleid2) {
         global $adb;
-        $ruleresult = $adb->pquery("SELECT ruleid, sequence FROM vtiger_mailscanner_rules WHERE ruleid = ? or ruleid = ?",
+            $ruleresult = $adb->pquery("SELECT ruleid, sequence FROM vtiger_mailscanner_rules WHERE ruleid = ? or ruleid = ?",
                 Array($ruleid1, $ruleid2));
         $rule_partinfo = Array();
-        if ($adb->num_rows($ruleresult) != 2) {
+            if($adb->num_rows($ruleresult) != 2) {
             return false;
         } else {
             $rule_partinfo[$adb->query_result($ruleresult, 0, 'ruleid')] = $adb->query_result($ruleresult, 0, 'sequence');
@@ -418,18 +393,17 @@ class Vtiger_MailScannerRule
     /**
      * Update rule information in database.
      */
-    function update()
-    {
+    function update() {
         global $adb;
         if ($this->ruleid) {
             $adb->pquery("UPDATE vtiger_mailscanner_rules SET scannerid=?,fromaddress=?,toaddress=?,subjectop=?,subject=?,bodyop=?,body=?,matchusing=?,assigned_to=?,cc=?,bcc=?
                     WHERE ruleid=?", Array($this->scannerid, $this->fromaddress, $this->toaddress, $this->subjectop, $this->subject,
-                $this->bodyop, $this->body, $this->matchusing, $this->assigned_to, $this->cc, $this->bcc, $this->ruleid));
+            $this->bodyop, $this->body, $this->matchusing, $this->assigned_to, $this->cc, $this->bcc, $this->ruleid));
         } else {
             $this->sequence = $this->__nextsequence();
             $adb->pquery("INSERT INTO vtiger_mailscanner_rules(scannerid,fromaddress,toaddress,subjectop,subject,bodyop,body,matchusing,sequence,assigned_to,cc,bcc)
                     VALUES(?,?,?,?,?,?,?,?,?,?,?,?)", Array($this->scannerid, $this->fromaddress, $this->toaddress, $this->subjectop, $this->subject,
-                $this->bodyop, $this->body, $this->matchusing, $this->sequence, $this->assigned_to, $this->cc, $this->bcc));
+            $this->bodyop, $this->body, $this->matchusing, $this->sequence, $this->assigned_to, $this->cc, $this->bcc));
             $this->ruleid = $adb->database->Insert_ID();
         }
     }
@@ -437,12 +411,11 @@ class Vtiger_MailScannerRule
     /**
      * Get next sequence to use
      */
-    function __nextsequence()
-    {
+    function __nextsequence() {
         global $adb;
         $seqres = $adb->pquery("SELECT max(sequence) AS max_sequence FROM vtiger_mailscanner_rules", Array());
         $maxsequence = 0;
-        if ($adb->num_rows($seqres)) {
+            if($adb->num_rows($seqres)) {
             $maxsequence = $adb->query_result($seqres, 0, 'max_sequence');
         }
         ++$maxsequence;
@@ -452,17 +425,16 @@ class Vtiger_MailScannerRule
     /**
      * Delete the rule and associated information.
      */
-    function delete()
-    {
+    function delete() {
         global $adb;
 
         // Delete dependencies
-        if (!empty($this->actions)) {
-            foreach ($this->actions as $action) {
-                $action->delete();
+            if(!empty($this->actions)) {
+                foreach($this->actions as $action) {
+            $action->delete();
             }
         }
-        if ($this->ruleid) {
+            if($this->ruleid) {
             $adb->pquery("DELETE FROM vtiger_mailscanner_ruleactions WHERE ruleid = ?", Array($this->ruleid));
             $adb->pquery("DELETE FROM vtiger_mailscanner_rules WHERE ruleid=?", Array($this->ruleid));
         }
@@ -471,16 +443,14 @@ class Vtiger_MailScannerRule
     /**
      * Update action linked to the rule.
      */
-    function updateAction($actionid, $actiontext)
-    {
+    function updateAction($actionid, $actiontext) {
         $action = $this->useaction;
 
-        if ($actionid != '' && $actiontext == '') {
-            if ($action)
-                $action->delete();
+            if($actionid != '' && $actiontext == '') {
+                if($action) $action->delete();
         } else {
-            if ($actionid == '') {
-                $action = new Vtiger_MailScannerAction($actionid);
+                if($actionid == '') {
+            $action = new Vtiger_MailScannerAction($actionid);
             }
             $action->scannerid = $this->scannerid;
             $action->update($this->ruleid, $actiontext);
@@ -490,10 +460,8 @@ class Vtiger_MailScannerRule
     /**
      * Take action on mail record
      */
-    function takeAction($mailscanner, $mailrecord, $matchresult)
-    {
-        if (empty($this->actions))
-            return false;
+    function takeAction($mailscanner, $mailrecord, $matchresult) {
+		if(empty($this->actions)) return false;
 
         $action = $this->useaction; // Action is limited to One right now
         return $action->apply($mailscanner, $mailrecord, $this, $matchresult);

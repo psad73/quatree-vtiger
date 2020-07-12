@@ -26,6 +26,7 @@
 <div id="js_strings" class="hide noprint">{Zend_Json::encode($LANGUAGE_STRINGS)}</div>
 <div class="modal myModal fade"></div>
 {include file='JSResources.tpl'|@vtemplate_path}
+<script src="layouts/quatree/resources/quatree.min.js" type="text/javascript"></script>
 </body>
 
 </html>

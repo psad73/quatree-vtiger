@@ -3,6 +3,7 @@
 #
 /config.inc.php
 /config.performance.php
+/config.csrf-secret.php
 /cron/output.txt
 /logs/*
 !/logs/.htaccess
@@ -26,7 +27,6 @@
 /build.properties
 /composer.json
 /composer.lock
-/index.php
 /.php_cs.cache
 
 /nbproject
@@ -35,3 +35,4 @@
 /gulpfile.js
 /package-lock.json
 /vtigercron-test-MailScanner.php
+/.project

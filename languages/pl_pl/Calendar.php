@@ -32,7 +32,7 @@ $languageStrings = array(
 	'End Date & Time' => 'Data zakończenia',
 	'Visibility'=> 'Widoczność',
 	'Recurrence'=> 'Powtarzalność',
-	
+
 	//Visibility picklist values
 	'Private'=> 'Prywatne',
 	'Public'=> 'Publiczne',
@@ -66,7 +66,7 @@ $languageStrings = array(
 
 	'LBL_RECORDS_LIST' => 'Widok listy',
 	'LBL_CALENDAR_VIEW' => 'Widok kalendarza',
-	
+
 	//Fixing colors for Shared Calendar and My Calendar
 	'LBL_EDIT_COLOR' => 'Kolor Edit',
 	'LBL_ADD_CALENDAR_VIEW' => 'Dodaj kalendarz',
@@ -78,7 +78,7 @@ $languageStrings = array(
 	'Tasks' => 'Zadanie',
 	'LBL_SELECT_FIELDS_FOR_RANGE' => 'Wybór pól dla zakresu',
 	'LBL_DUPLICATE_VIEW_EXIST' => 'Kalendarz Zobacz już istnieje',
-    
+
     // For Event Invitation
     'LBL_ACTIVITY_NOTIFICATION' => 'To jest powiadomienie, że działalność jest przypisany do Ciebie, że nie było',
     'LBL_ACTIVITY_INVITATION' => 'Zostałeś zaproszony na działalność',
@@ -100,7 +100,7 @@ $languageStrings = array(
 	'LBL_FUTURE_EVENTS_EDIT_INFO' => 'Ten i wszystkie następujące wydarzenia zostanie zmieniona.</br> Wszelkie zmiany do przyszłych zdarzeń zostaną utracone.',
 	'LBL_ONLY_THIS_EVENT_EDIT_INFO' => 'Wszystkie inne wydarzenia w serii pozostanie sam.',
 	'LBL_EDIT_RECURRING_EVENTS_INFO' => 'Czy chcesz zapisać zmiany za',
-	
+
 	'LBL_DELETE_RECURRING_EVENT' => 'Usuń cykliczne wydarzenie',
 	'LBL_ALL_EVENTS_DELETE_INFO' => 'Wszystkie wydarzenia w serii zostaną usunięte.',
 	'LBL_FUTURE_EVENTS_DELETE_INFO' => 'Ten i wszystkie następujące zdarzenia zostaną usunięte.',
@@ -154,19 +154,20 @@ $languageStrings = array(
   'LBL_THIS_WEEK' => 'W Tym Tygodniu',
   'LBL_ADD_TASK_AND_PRESS_ENTER' => 'Dodaj zadanie i naciśnij klawisz Enter',
 
+    'LBL_PONIEDZIAŁEK'=> 'Poniedziałek',
 
-  'LBL_JANUARY' => 'Styczeń',
-  'LBL_FEBRUARY' => 'Stycznia',
-  'LBL_MARCH' => 'Marca',
-  'LBL_APRIL' => 'Kwiecień',
-  'LBL_MAY' => 'Może',
-  'LBL_JUNE' => 'Czerwiec',
-  'LBL_JULY' => 'Lipiec',
-  'LBL_AUGUST' => 'Sierpień',
-  'LBL_SEPTEMBER' => 'Wrzesień',
-  'LBL_OCTOBER' => 'Październik',
-  'LBL_NOVEMBER' => 'Listopad',
-  'LBL_DECEMBER' => 'Grudzień',
+	'LBL_JANUARY' => 'Styczeń',
+	'LBL_FEBRUARY' => 'Luty',
+	'LBL_MARCH' => 'Marzec',
+	'LBL_APRIL' => 'Kwiecień',
+	'LBL_MAY' => 'Maj',
+	'LBL_JUNE' => 'Czerwiec',
+	'LBL_JULY' => 'Lipiec',
+	'LBL_AUGUST' => 'Sierpień',
+	'LBL_SEPTEMBER' => 'Wrzesień',
+	'LBL_OCTOBER' => 'Październik',
+	'LBL_NOVEMBER' => 'Listopad',
+	'LBL_DECEMBER' => 'Grudzień',
 	'LBL_CLICK_HERE_TO_VIEW' => 'Kliknij tutaj, aby wyświetlić',
 
 	'LBL_TOTAL_EVENTS_DUPLICATED' => 'Ilość duplikatów Wydarzenia pomijane',
@@ -175,13 +176,13 @@ $languageStrings = array(
 $jsLanguageStrings = array(
 
 	'LBL_ADD_EVENT_TASK' => 'Dodaj zadanie / Zadanie',
-    
+
 	//Calendar view label translation
 	'LBL_MONTH' => 'Miesiąc',
 	'LBL_TODAY' => 'Dzisiaj',
 	'LBL_DAY' => 'Dzień',
 	'LBL_WEEK' => 'Tydzień',
-	
+
 	'LBL_SUNDAY' => 'Niedziela',
 	'LBL_MONDAY' => 'Poniedziałek',
 	'LBL_TUESDAY' => 'Wtorek',
@@ -189,46 +190,46 @@ $jsLanguageStrings = array(
 	'LBL_THURSDAY' => 'Czwartek',
 	'LBL_FRIDAY' => 'Piątek',
 	'LBL_SATURDAY' => 'Sobota',
-	
-	'LBL_SUN' => 'Cz',
-	'LBL_MON' => 'pon',
+
+	'LBL_SUN' => 'Nd',
+	'LBL_MON' => 'Pn',
 	'LBL_TUE' => 'Wt',
-	'LBL_WED' => 'Poślubić',
-	'LBL_THU' => 'Czw',
-	'LBL_FRI' => 'pt',
-	'LBL_SAT' => 'Sob',
-	
-	'LBL_JANUARY' => 'Styczen',
+	'LBL_WED' => 'Śr',
+	'LBL_THU' => 'Cz',
+	'LBL_FRI' => 'Pt',
+	'LBL_SAT' => 'Sb',
+
+	'LBL_JANUARY' => 'Styczeń',
 	'LBL_FEBRUARY' => 'Luty',
-	'LBL_MARCH' => 'mar',
-	'LBL_APRIL' => 'kwi',
-	'LBL_MAY' => 'maja',
-	'LBL_JUNE' => 'cze',
-	'LBL_JULY' => 'lipiec',
+	'LBL_MARCH' => 'Marzec',
+	'LBL_APRIL' => 'Kwiecień',
+	'LBL_MAY' => 'Maj',
+	'LBL_JUNE' => 'Czerwiec',
+	'LBL_JULY' => 'Lipiec',
 	'LBL_AUGUST' => 'Sierpień',
-	'LBL_SEPTEMBER' => 'wrzesnia',
-	'LBL_OCTOBER' => 'paź',
+	'LBL_SEPTEMBER' => 'Wrzesień',
+	'LBL_OCTOBER' => 'Październik',
 	'LBL_NOVEMBER' => 'Listopad',
 	'LBL_DECEMBER' => 'Grudzień',
-	
+
 	'LBL_JAN' => 'Sty',
-	'LBL_FEB' => 'Lutego',
-	'LBL_MAR' => 'Zniszczyć',
-	'LBL_APR' => 'Kwietnia',
-	'LBL_MAY' => 'maja',
-	'LBL_JUN' => 'Czer',
-	'LBL_JUL' => 'Lipca',
+	'LBL_FEB' => 'Lut',
+	'LBL_MAR' => 'Mar',
+	'LBL_APR' => 'Kwi',
+	'LBL_MAY' => 'Maj',
+	'LBL_JUN' => 'Cze',
+	'LBL_JUL' => 'Lip',
 	'LBL_AUG' => 'Sie',
 	'LBL_SEP' => 'Wrz',
-	'LBL_OCT' => 'Październik',
-	'LBL_NOV' => 'Listopad',
-	'LBL_DEC' => 'Grudnia',
-	
+	'LBL_OCT' => 'Paź',
+	'LBL_NOV' => 'Lis',
+	'LBL_DEC' => 'Gru',
+
 	'LBL_ALL_DAY' => 'Wszystkie dni',
-	
+
 	'Mobile Call' => 'Mobile Call',
 	//End
-	
+
 	//Fixing colors for Shared Calendar and My Calendar
 	'JS_CALENDAR_VIEW_COLOR_UPDATED_SUCCESSFULLY' => 'Zobacz kalendarz kolor zaktualizowane',
 	'JS_CALENDAR_VIEW_DELETE_CONFIRMATION' => 'Czy na pewno chcesz usunąć ten pogląd kalendarz?',
