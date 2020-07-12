@@ -9,7 +9,7 @@
 *
  ********************************************************************************/
 -->*}
-{strip}    
+{strip}
 {foreach item=DETAIL_VIEW_WIDGET from=$DETAILVIEW_LINKS['DETAILVIEWWIDGET']}
 	{if ($DETAIL_VIEW_WIDGET->getLabel() eq 'Documents') }
 		{assign var=DOCUMENT_WIDGET_MODEL value=$DETAIL_VIEW_WIDGET}

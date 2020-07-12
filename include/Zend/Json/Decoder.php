@@ -149,8 +149,7 @@ class Zend_Json_Decoder
     public static function decode($source = null, $objectDecodeType = Zend_Json::TYPE_ARRAY)
     {
         if (null === $source) {
-           $e = new Exception;
-            //throw new Zend_Json_Exception('Must specify JSON encoded source for decoding');
+           //throw new Zend_Json_Exception('Must specify JSON encoded source for decoding');
            return null;
         } elseif (!is_string($source)) {
             throw new Zend_Json_Exception('Can only decode JSON encoded strings');

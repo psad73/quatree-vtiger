@@ -124,7 +124,7 @@ class Settings_Vtiger_Module_Model extends Vtiger_Base_Model {
 		return array();
 	}
 
-	/**
+	/** 
 	 * Fucntion to get the settings menu item for vtiger7
 	 * @return <array> $settingsMenItems
 	 */

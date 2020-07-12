@@ -1,5 +1,4 @@
 <?php
-
 /*********************************************************************************
  ** The contents of this file are subject to the vtiger CRM Public License Version 1.0
  * ("License"); You may not use this file except in compliance with the License
@@ -29,11 +28,10 @@ if(!function_exists('imap_open')) {
 /**
  * Helper function for triggering the scan.
  */
-
 function service_MailScanner_performScanNow($scannerinfo, $debug) {
     global $log;
 	/** If the scanner is not enabled, stop. */
-	if($scannerinfo->isvalid) {
+	if($scannerinfo->isvalid) { 
 		echo "Scanning " . $scannerinfo->server . " in progress\n";
                 $log->debug("Scanning " . $scannerinfo->server . " in progress");
 
@@ -41,18 +39,18 @@ function service_MailScanner_performScanNow($scannerinfo, $debug) {
 		$scanner = new Vtiger_MailScanner($scannerinfo);
 		$scanner->debug = $debug;
 		$status = $scanner->performScanNow();
-
+		
                 if($status && is_bool($status))
                     echo "\nScanning " . $scannerinfo->server . " completed\n";
                 else
                     echo "\nScanning Failed. Error ".$status."\n";
-
+		
 	} else {
 		echo "Failed! [{$scannerinfo->scannername}] is not enabled for scanning!";
 	}
 }
 
-/**
+/** 
  * Execution of this is based on number of emails and connection to mailserver.
  * So setting infinite timeout.
  */
@@ -63,25 +61,25 @@ $debug = true;
 
 /** Pick up the mail scanner for scanning. */
 if(isset($_REQUEST['scannername'])) {
-
-	// Target scannername specified?
+	
+	// Target scannername specified?	
 	$scannername = vtlib_purify($_REQUEST['scannername']);
 	$scannerinfo = new Vtiger_MailScannerInfo($scannername);
-
+	
 	service_MailScanner_performScanNow($scannerinfo, $debug);
-
+	
 } else {
-
+	
 	// Scan all the configured mailscanners?
-
+	
 	$scannerinfos = Vtiger_MailScannerInfo::listAll();
 	if(empty($scannerinfos)) {
-
+		
 		echo "No mailbox configured for scanning!";
-
+		
 	} else {
 		foreach($scannerinfos as $scannerinfo) {
 			service_MailScanner_performScanNow($scannerinfo, $debug);
 		}
-	}
+	}	
 }

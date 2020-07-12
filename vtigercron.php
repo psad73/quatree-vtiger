@@ -49,7 +49,7 @@ function vtigercron_detect_run_in_cli(){
 
 if(vtigercron_detect_run_in_cli() || (isset($_SESSION["authenticated_user_id"]) &&	isset($_SESSION["app_unique_key"]) && $_SESSION["app_unique_key"] == $application_unique_key)){
 
-	$cronTasks = false;	
+	$cronTasks = false;
 	if (isset($_REQUEST['service'])) {
 		// Run specific service
 		$cronTasks = array(Vtiger_Cron::getInstance($_REQUEST['service']));
