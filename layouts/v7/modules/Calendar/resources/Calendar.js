@@ -1559,7 +1559,7 @@ Vtiger.Class("Calendar_Calendar_Js", {
 	getDefaultCalendarTimeFormat: function () {
 		var userDefaultTimeFormat = this.getUserPrefered('time_format');
 		if (parseInt(userDefaultTimeFormat) === 24) {
-			userDefaultTimeFormat = 'H(:mm)';
+			userDefaultTimeFormat = 'H:mm';
 		} else {
 			userDefaultTimeFormat = 'h(:mm)a';
 		}
@@ -1575,7 +1575,7 @@ Vtiger.Class("Calendar_Calendar_Js", {
                 var monthPos = dateFormat.search("mm");
                 var datePos = dateFormat.search("dd");
                 if (monthPos < datePos) {
-                    dateFormat = "M/D";
+                    dateFormat = "D.MM";
                 } else {
                     dateFormat = "D/M";
                 }
@@ -1775,12 +1775,12 @@ Vtiger.Class("Calendar_Calendar_Js", {
 					if (tomorrow.format(dateFormat) === date.format(dateFormat)) {
 						return app.vtranslate('LBL_TOMORROW').toUpperCase();
 					}
-				}
-				return date.format('LL');
+				}                
+				return date.format('D MMMM YYYY');
 			},
 			getWeekDay: function (date) {
 				var weekDay = date.format('dddd');
-				var label = 'LBL_' + weekDay.toUpperCase();
+				var label = weekDay.toUpperCase();
 				return app.vtranslate(label).toUpperCase();
 			},
 			renderHtml: function () {
