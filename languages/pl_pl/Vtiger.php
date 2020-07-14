@@ -737,16 +737,16 @@ $languageStrings = array(
 
     //Months in 3 letters translations
     'LBL_Jan' => 'Jan',
-    'LBL_Feb' => 'Luty',
+    'LBL_Feb' => 'Lut',
     'LBL_Mar' => 'Mar',
     'LBL_Apr' => 'Kwi',
-    'LBL_May' => 'Może',
+    'LBL_May' => 'Maj',
     'LBL_Jun' => 'Cze',
     'LBL_Jul' => 'Jul',
     'LBL_Aug' => 'Sie',
-    'LBL_Sep' => 'Wrzesień',
+    'LBL_Sep' => 'Wrz',
     'LBL_Oct' => 'Paź',
-    'LBL_Nov' => 'Noego',
+    'LBL_Nov' => 'Lis',
     'LBL_Dec' => 'Dec',
 
     'LBL_CALENDAR_SETTINGS' => 'Ustawienia Kalendarza',
@@ -755,7 +755,7 @@ $languageStrings = array(
     //Translations used in inventory modules for address
     'SINGLE_Accounts' => 'Kontrahent',
 	'SINGLE_Contacts' => 'Kontakt',
-    'HelpDesk' => 'Bilety lotnicze',
+    'HelpDesk' => 'Zgłoszenie',
     'LBL_TAG_CLOUD' => 'Chmura Tagów',
 
     'LBL_NO_RECORDS' => 'Brak Wpisów',
