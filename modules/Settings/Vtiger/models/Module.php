@@ -124,7 +124,7 @@ class Settings_Vtiger_Module_Model extends Vtiger_Base_Model {
 		return array();
 	}
 
-	/** 
+	/**
 	 * Fucntion to get the settings menu item for vtiger7
 	 * @return <array> $settingsMenItems
 	 */
@@ -208,10 +208,10 @@ class Settings_Vtiger_Module_Model extends Vtiger_Base_Model {
 
 	static function getSettingsMenuListForNonAdmin() {
 		$currentUser = Users_Record_Model::getCurrentUserModel();
-		$myTagSettingsUrl = $currentUser->getMyTagSettingsListUrl();
-
-		$settingsMenuList = array('LBL_MY_PREFERENCES'	=> array('LBL_MY_PREFERENCES'	=> '',
-																 'LBL_CALENDAR_SETTINGS'=> '',
+        $myPreferencesSettingsUrl = $currentUser->getPreferenceDetailViewUrl();
+        $myTagSettingsUrl = $currentUser->getMyTagSettingsListUrl();
+		$settingsMenuList = array('LBL_MY_PREFERENCES'	=> array('LBL_MY_PREFERENCES'	=> $myPreferencesSettingsUrl,
+																 /*'LBL_CALENDAR_SETTINGS'=> $myCalendarSettingsUrl,*/
 																 'LBL_MY_TAGS'		=> $myTagSettingsUrl),
 									'LBL_EXTENSIONS'	=> array('LBL_GOOGLE'		=> 'index.php?module=Contacts&parent=Settings&view=Extension&extensionModule=Google&extensionView=Index&mode=settings')
 								);
